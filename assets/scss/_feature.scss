@@ -1,0 +1,175 @@
+//featurea-area
+.feature-area {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+   & .round-shape {
+        width: 549px;
+        height: 545px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+   & .custom-col {
+        flex: 0 0 20%;
+        max-width: 20%;
+        @media #{$md} {
+            flex: 0 0 30%;
+            max-width: 30%;
+        }
+        @media #{$xs} {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        @media #{$sm} {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+}
+
+.features {
+    border-radius: 10px;
+    padding: 60px 0 30px 0;
+    position: relative;
+    z-index: 2;
+    @include transition(.4s);
+    &::before {
+        content: '';
+        border: 3px solid $theme-color2;
+        border-radius: 50%;
+        opacity: 0.149;
+        position: absolute;
+        left: 27px;
+        top: 34px;
+        width: 12px;
+        height: 12px;
+        z-index: 1;
+        @include transition(.4s);
+    }
+    &::after {
+        content: '';
+        border: 3px solid $theme-color;
+        border-radius: 50%;
+        opacity: 0.3;
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+        z-index: 1;
+        @include transition(.4s);
+    }
+
+    &__icon {
+        & i {
+            color: $theme-color2;
+            font-size: 80px;
+            @include transition(.4s);
+        }
+    }
+
+    & h6 {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+        @include transition(.4s);
+    }
+    &:hover {
+        background:$theme-color2;
+        transform: translateY(-7px);
+        &::before {
+            border-color: $white;
+            opacity: 1;
+        }
+        &::after {
+            border-color: $white;
+            opacity: 1;
+        }
+        & .features__icon {
+            & i {
+                color: $white;
+            }
+        }
+        & h6 {
+            color: $white;
+        }
+    }
+}
+.feature__wrapper {
+    & p {
+        color: $body-text-color3;
+        margin-bottom: 35px;
+    }
+}
+.single-feature {
+   &__icon {
+       float: left;
+       margin-top: 20px;
+        & i {
+            color: $theme-color2;
+            font-size: 60px;
+        }
+        @media #{$lg} {
+            float: none;
+            margin-bottom: 20px;
+        }
+    }
+    &__content {
+        overflow: hidden;
+       & h5 {
+            font-size: 20px;
+        }
+        & p {
+            color: $body-text-color3;
+        }
+    } 
+} 
+.about-feature-project {
+   & .about-img {
+        padding-top: 0;
+        @media #{$md} {
+            padding-left: 0;
+        }
+        @media #{$xs} {
+            padding-left: 0;
+        }
+        &__style-text {
+            left: auto;
+            top: 100px;
+            right: -145px;
+            @media #{$laptop} {
+                right: 0;
+            }
+            @media #{$lg} {
+                right: 0;
+            }
+            @media #{$md} {
+                right: 0;
+            }
+        }
+        &__style-shape {
+            position: absolute;
+            right: -60px;
+            bottom: -50px;
+            z-index: -1;
+            animation: heartbeat infinite 5s alternate-reverse;
+            @media #{$laptop} {
+                right: 0;
+            }
+            @media #{$lg} {
+                right: 0;
+            }
+            @media #{$md} {
+                right: 0;
+            }
+            @media #{$xs} {
+                right: 0;
+            }
+        }
+    }
+}
+
+  

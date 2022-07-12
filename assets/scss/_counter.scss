@@ -1,0 +1,106 @@
+//counter-area
+.counter-area {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.counetrs {
+    @media #{$xs} {
+        text-align: center;
+    }
+    &__icon {
+        & i {
+            color: $theme-color;
+            font-size: 55px;
+            line-height: 1;
+        }
+    }
+    & h1 {
+        color: $white;
+        font-size: 55px;
+    } 
+    & p {
+        color: $white;
+        font-weight: 500;
+    } 
+} 
+//brand-area
+.brand-area {
+    & .custom-container-02 {
+        max-width: 1440px;
+        margin: 0 auto;
+        border-bottom: 2px solid $hr-border-color6;
+    }
+    .custom-col-02 {
+        display: flex;
+        flex: 0 0 20%;
+    }
+    .brand-slide {
+        & .brand-img {
+            text-align: center;
+           & a {
+                display: inline-block;
+            }
+        }
+    }
+}
+//inner-counter
+.inner-counters {
+    .row {
+        & .col-xl-6 {
+            &:nth-child(1) {
+               & .counters {
+                    position: relative;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background: $theme-color2;
+                        width: 3px;
+                        height: 51px;
+                        top: 0;
+                        right: 0;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+    .counters {
+        @media #{$lg} {
+            padding-left: 0;
+        }
+        @media #{$xs} {
+            padding-left: 0;
+        }
+        &__icon {
+            & i {
+                color: $theme-color2;
+                font-size: 50px;
+                margin-right: 20px;
+            }
+        }
+        &__content {
+          & h3 {
+                color: $theme-color2;
+                font-size: 30px;
+                margin-bottom: 03px;
+            }
+            & p {
+                color:$heding;
+                font-weight: 500;
+            }
+        }
+    }
+//counter-area-02
+.counter-area-02 {
+   & .custom-container-05 {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+   & .counetrs {
+       & h1 {
+            font-weight: 600;
+        }
+    } 
+}

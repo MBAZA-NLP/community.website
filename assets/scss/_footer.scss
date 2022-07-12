@@ -1,0 +1,131 @@
+//footer-area
+.footer-area {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer-bottom-area {
+    border-bottom: 2px solid $hr-border-color7;
+}
+.scroll-target {
+	color: $white;
+	background: $theme-color2;
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	right: 0;
+    margin: 0 auto;
+    bottom:95px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    z-index: 3;
+    &:hover {
+        background: $theme-color2;
+    }
+    @media #{$xs} {
+        margin: 0 0 0 auto
+    }
+}
+.footer__widget {
+    &.fot_abot {
+        @media #{$lg} {
+            padding-left: 0;
+        }
+    }
+    @media #{$md} {
+        padding-left: 0;
+    }
+    @media #{$xs} {
+        padding-left: 0;
+    }
+    @media #{$sm} {
+        padding-left: 0;
+    }
+   & .footer-logo {
+        display: inline-block;
+    }
+    & p {
+        color: $body-text-color4;
+    }
+    & .semi-title {
+        color:$white;
+        font-size: 20px;
+        line-height: 1;
+    }
+    & .fot-list {
+       & li {
+            margin-bottom: 8px;
+           & a {
+                color: $body-text-color4;
+                font-size: 15px;
+                line-height: 1.2;
+                font-family: $poppins;
+                font-weight: 400;
+                position: relative;
+                @include transition(.4s);
+                &::before {
+                    content:'\f054';
+                    position: absolute;
+                    font-family: 'Font Awesome 5 pro';
+                    font-size: 13px;
+                    color: $body-text-color4;
+                    left: 0;
+                    top:5px;
+                    line-height: 1;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                &:hover, &:focus {
+                    color:$theme-color;
+                    padding-left: 20px;
+                    &::before {
+                        color: $theme-color;
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        } 
+    } 
+}
+.address-list {
+    & li {
+        & a {
+            &::before {
+                display: none;
+            }
+            & i {
+                color: $theme-color;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+.foter-subscribe {
+    margin-right: 0;
+    & .subscribe-form {
+        & .form-control {
+            font-weight: 500;
+            height: 55px;
+        }
+        & button {
+            padding: 4px 11px;
+            right: 10px;
+        }
+    }
+}
+//copy-right-area
+.copy-right-area {
+    & .copyright {
+        & p {
+              color: $body-text-color4;
+          } 
+      }
+}
+
+
+
+

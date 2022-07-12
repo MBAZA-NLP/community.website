@@ -1,0 +1,198 @@
+//subscribe-area
+.subscribe-bg {
+	padding: 55px 0 20px 60px;
+	margin-top: -130px;
+	@media #{$xs} {
+		padding: 55px 0 20px 10px;
+	}
+}
+.subscribe-wrapper {
+	& .section-title {
+		& h6 {
+			color: $white;
+			&.left-line {
+				&::before {
+					background: $white;
+				}
+				&::after {
+					display: none;
+				}
+			}
+		}
+		& h2 {
+			color: $white;
+		}
+	}
+}
+.subscribe-content {
+	margin-right: 100px;
+	@media #{$xs} {
+		margin-right: 0;
+	}
+	& h6 {
+		color: $white;
+		font-weight: 400;
+		margin-bottom: 22px;
+	}
+	& .subscribe-form {
+		position: relative;
+		& input:focus {
+			box-shadow: none;
+		}
+		& .form-control {
+			color: $body-text-color2;
+			font-size: 15px;
+			line-height: 1;
+			font-weight: 600;
+			font-family: $poppins;
+			background: $white;
+			position: relative;
+			border-radius: 0;
+			border: 0;
+			width: 100%;
+			height: 80px;
+			z-index: 1;
+			display: block;
+			padding-left: 35px;
+		}
+		& button {
+			border: 0;
+			color: $heding;
+			background: $theme-color;
+			font-size: 15px;
+			padding: 12px 20px;
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 1;
+			display: inline-block;
+			cursor: pointer;
+		}
+	}
+}
+//cta-area
+.cta-wrapper {
+	& .section-title {
+		& h2 {
+			font-weight: 300;
+			& b {
+				font-weight: 700;
+			}
+		}
+	}
+}
+.cta-btn {
+	& a {
+		color: $white;
+		background: $heding;
+		&:hover {
+			background: transparent;
+		}
+	}
+}
+//cta-area-02
+.cta-area-02 {
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	& .cta-wrapper {
+		& .section-title {
+			& h2 {
+				color: $white;
+			}
+		}
+		& .cta-btn {
+			& a {
+				color: $heding;
+				background: $white;
+			}
+		} 
+	}
+}
+.contact-box {
+	&__icon {
+		margin-right: 18px;
+		@media #{$md} {
+			margin-bottom: 20px;
+		}
+		@media #{$xs} {
+			margin-bottom: 20px;
+		}
+		& i {
+			color: white;
+			font-size: 24px;
+			background: #04391B;
+			display: inline-block;
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 60px;
+			animation: pulseBig infinite .5s linear;
+		}
+	}
+	&__content {
+		& h4 {
+			font-size: 24px;
+		}
+		& h5 {
+			color: $body-text-color3;
+			font-weight: 500;
+		}
+	} 
+} 
+.contact-form {
+	border-top: 2px solid $hr-border-color11;
+	& .input-box {
+		& h5 {
+			font-size: 20px;
+			margin-bottom: 22px;
+		}
+		& .input-text {
+			& .form-control {
+				background-color: $grey3;
+			}
+			&.input-phone {
+				&::before {
+					content: '\f095';
+				}
+			}
+			&.input-sub {
+				&::before {
+					content: '\f095';
+				}
+			}
+		}
+		& .input-message {
+			&::before {
+				display: none;
+			}
+			& textarea {
+				background-color: $grey3;
+				&:focus {
+					background-color: $grey3;
+				}
+			} 
+		}
+	} 
+	& .msg-btn {
+		a.theme_btn {
+			padding: 22px 72px 22px 72px;
+		}
+	}
+}
+.contact-map-area {
+	& .map-02 {
+		& iframe {
+			width: 100%;
+			min-height: 665px;
+			border: 0;
+			margin-bottom: -8px;
+			@media #{$xs} {
+				min-height: 450px;
+			}
+		}
+	} 
+}
