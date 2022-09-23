@@ -79,8 +79,7 @@ The community website is built with the following stack. You are also welcome to
 
 ### Prerequisites
 
-To be honest, there are no pre-requisite :)
-
+To be honest, there are no pre-requisite apart from joining our <a href="https://join.slack.com/t/mbazanlpcommunity/shared_invite/zt-1e5mxv2x2-XH25edKoZ4tFZou4SvLsQA">slack channel</a>
 
 
 <!-- ROADMAP -->
@@ -126,13 +125,13 @@ Don't forget to give the project a star! Thanks again!
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/MBAZA-NLP/community.website
 [contributors-url]: https://github.com/MBAZA-NLP/community.website/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/MBAZA-NLP/community.website/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/MBAZA-NLP/community.website
+[forks-url]: MBAZA-NLP/community.website
+[stars-shield]: https://img.shields.io/github/stars/MBAZA-NLP/community.website
+[stars-url]: MBAZA-NLP/community.website
+[issues-shield]: https://img.shields.io/github/issues/MBAZA-NLP/community.website
 [issues-url]: https://github.com/MBAZA-NLP/community.website/issues
 [slack-shield]: https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white
 [slack-url]: https://join.slack.com/t/mbazanlpcommunity/shared_invite/zt-1e5mxv2x2-XH25edKoZ4tFZou4SvLsQA
