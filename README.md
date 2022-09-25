@@ -19,7 +19,7 @@
   <h3 align="center">MBAZA NLP Community website</h3>
 
   <p align="center">
-    A guide on how to contribute to the community website!
+    A guide on how to  contribute to the community website!
     <br />
     <a href="https://www.mbaza.org">View Website</a>
     ·
