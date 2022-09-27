@@ -41,6 +41,28 @@
     <img src="assets/img/frontpage.JPG" alt="Logo" width="1080" height="600">
 </div>
 
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
+
 The website aims to showcase our work as community including the upcomming events, ongoing projects, members of the community and means to communication we use.
 
 Main Objectives:
@@ -72,8 +94,8 @@ Please feel free to also suggest any other area you might be intrested to contri
 
 The community website is built with the following stack. You are also welcome to suggest other stack to include!
 
-[![Bootstrap][Bootstrap.com]][Bootstrap-url]
-[![JQuery][JQuery.com]][JQuery-url]
+[![HTML][html.com]][html-url]
+[![Javascript][javascript.com]][javascript-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,8 +107,8 @@ To be honest, there are no pre-requisite apart from joining our <a href="https:/
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Ghost CMS
 - [x] Add README.md to the community website
+- [ ] Add Ghost CMS
 
 
 See the [open issues](https://github.com/MBAZA-NLP/community.website/issues) for a full list of proposed features (and known issues).
@@ -109,6 +131,13 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin dev`)
 5. Open a Pull Request to the dev branch
 
+### Thank you to our contributors
+
+<a href="https://github.com/mbaza-nlp/community.website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=mbaza-nlp/community.website" />
+</a>
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -118,6 +147,11 @@ Don't forget to give the project a star! Thanks again!
 
 * Isaac Manzi - isaac.manzi@giz.de
 * Samuel Rutunda - samuel@digitalumuganda.com
+* [Olivier](https://github.com/twist250) 
+* Floris Nzabakira - 
+* Rene Promesse - 
+* [Arnaud Kayonga](https://github.com/agent87)  -
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -135,7 +169,7 @@ Don't forget to give the project a star! Thanks again!
 [issues-url]: https://github.com/MBAZA-NLP/community.website/issues
 [slack-shield]: https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white
 [slack-url]: https://join.slack.com/t/mbazanlpcommunity/shared_invite/zt-1e5mxv2x2-XH25edKoZ4tFZou4SvLsQA
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
-[JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
-[JQuery-url]: https://jquery.com 
+[html.com]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
+[html-url]: https://html.com
+[javascript.com]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
+[javascript-url]: https://javascript.com 
