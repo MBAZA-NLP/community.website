@@ -148,9 +148,9 @@ Don't forget to give the project a star! Thanks again!
 * Isaac Manzi - isaac.manzi@giz.de
 * Samuel Rutunda - samuel@digitalumuganda.com
 * [Olivier](https://github.com/twist250) 
-* Floris Nzabakira - 
-* Rene Promesse - 
-* [Arnaud Kayonga](https://github.com/agent87)  -
+* [Floris Nzabakira](https://github.com/Kira-Floris)
+* [Rene Promesse](https://github.com/renepromesse) 
+* [Arnaud Kayonga](https://github.com/agent87)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
