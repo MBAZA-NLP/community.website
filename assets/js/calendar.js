@@ -1,4 +1,6 @@
 (function($){
+  const username = "";
+  const key = "";
   function injectCalendarEvents(title, uri, location, date, time) {
       return `
             <li>
@@ -30,8 +32,7 @@
       return `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
     }
     $(window).on('load',async function () {
-      const username = "";
-      const key = "";
+      
       $.ajax({
         url:
           "https://www.googleapis.com/calendar/v3/calendars/" +
