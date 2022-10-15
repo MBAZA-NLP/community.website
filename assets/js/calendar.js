@@ -1,6 +1,6 @@
 (function($){
-  const username = "";
-  const key = "";
+  const username = "mbazanlp.community@gmail.com";
+  const key = "AIzaSyBxDGuEdlEgMyPbyjNjymNwI10vSdByrhs";
   function injectCalendarEvents(title, uri, location, date, time) {
       return `
             <li>
