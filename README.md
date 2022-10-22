@@ -2,10 +2,7 @@
 
 
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![Slack][slack-shield]][slack-url]
 
 
 
@@ -31,17 +28,6 @@
 
 
 
-
-
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-<div align="center">
-    <img src="assets/img/frontpage.JPG" alt="Logo" width="1080" height="600">
-</div>
-
-<details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
@@ -61,7 +47,9 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
-</details>
+
+<!-- ABOUT THE PROJECT -->
+## About the Project
 
 The website aims to showcase our work as community including the upcomming events, ongoing projects, members of the community and means to communication we use.
 
@@ -107,7 +95,7 @@ To be honest, there are no pre-requisite apart from joining our <a href="https:/
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add README.md to the community website
+- [ ] Add calendar to the community website
 - [ ] Add Ghost CMS
 
 
@@ -145,9 +133,9 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-* Isaac Manzi - isaac.manzi@giz.de
-* Samuel Rutunda - samuel@digitalumuganda.com
-* [Olivier](https://github.com/twist250) 
+* [Isaac Manzi](https://github.com/IMdtman)
+* [Samuel Rutunda](https://github.com/rutsam)
+* [Olivier Iradukunda](https://github.com/twist250) 
 * [Floris Nzabakira](https://github.com/Kira-Floris)
 * [Rene Promesse](https://github.com/renepromesse) 
 * [Arnaud Kayonga](https://github.com/agent87)
