@@ -1,7 +1,7 @@
 (function($){
-  const username = "mbazanlp.community@gmail.com";
-  const key = "AIzaSyBxDGuEdlEgMyPbyjNjymNwI10vSdByrhs";
-  const limit = 4;
+  const username = "nzafloris@gmail.com";
+  const key = "AIzaSyCxlpLlJO-pS9OIz6zPoVVUHN9yuSir4M8";
+  const limit = 5;
   function injectCalendarEvents(title, uri, location, start, end, time) {
       return `
             <li>
@@ -55,6 +55,15 @@
       var formattedDate = getMonthName(parseInt(t[1]))+' '+getDateAdd(parseInt(t[2]))+', '+t[0]; 
       return formattedDate;
     }
+    function compareDates(date){
+      var dateSplit = date.split('-');
+      var currentSplit = getDate(getTodayDate()).split('-');
+      if(new Date(dateSplit[0],dateSplit[1],dateSplit[2])>=new Date(currentSplit[0],currentSplit[1],currentSplit[2])){
+        return true;
+      }else{
+        return false;
+      }
+    }
     $(window).on('load',async function () {
       
       $.ajax({
@@ -72,22 +81,7 @@
         success: await function (data) {
           var calendarUl = document.getElementById("calendar-post-list");
           let htmlCode = ``;
-          function compareDates(date){
-            var dateSplit = date.split('-');
-            var currentSplit = getDate(getTodayDate()).split('-');
-            if(new Date(dateSplit[0],dateSplit[1],dateSplit[2])>=new Date(currentSplit[0],currentSplit[1],currentSplit[2])){
-              return true;
-            }else{
-              return false;
-            }
-          }
-          function fromPresent(data) {
-            const last = data.length - 1;
-            if(data[last].start.dateTime>=getTodayDate()){
-              return true;
-            }
-            return false;
-          }
+          
           var temp = [];
           if(compareDates(getDate(checkDateOrDateTime(data.items[data.items.length-1].start)))===true){
             data.items.forEach(function(item){
