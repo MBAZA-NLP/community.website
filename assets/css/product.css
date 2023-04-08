@@ -1,3 +1,85 @@
+:root{
+    --yellow:#F59221
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.conttainer{
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+.projects-intro{
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+
+.projects-intro button{
+    border-radius: 12px;
+    padding: 5px 30px;
+    border: none;
+    background-color: var(--yellow);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.projects-Container{
+    display: flex;
+    gap: 30px;
+}
+.card-container{
+    border: 1px solid;
+    margin-top: 0%;
+    justify-content: space-between;
+    border-radius: 20px 20px 20px 20px;
+    width: 21% ;
+    height:9% ;
+}
+   
+.first {
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+.first p{
+   font-family: sans-serif;
+    
+    font-weight: bolder;
+}
+.first img{
+  padding-top: 15px;
+    height: 19px;
+}
+
+.second img{
+    padding-left: 49px;
+     height: 100px;
+}
+.third{
+    width: 80%;
+    margin: 5px auto;
+}
+.third h3{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.fourth{
+    width: 80%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fourth p{
+    
+    font-size:14px;
+    cursor: pointer;
+}
 .prodContainer {
   margin: 40px;
   display: block;
