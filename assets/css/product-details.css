@@ -1,0 +1,35 @@
+body {
+  margin: 0px;
+  border: 0px;
+  color: fff;
+}
+.stats{
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    font-family: sans-serif Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.stat{
+    /* border: 2px solid blue; */
+    font-size: 30px;
+    margin-right: 90px;
+    height: 19px;
+    width: 42px;
+    font-family: bold;
+}
+.chart1{
+/* border: 2px solid red; */
+margin-top: 90px;
+margin-left: -90px;
+height: 244px;
+width: 392px;
+
+}
+.chart2{
+    /* border: 2px solid blueviolet; */
+    margin-top: 180px;
+    margin-right: 120px;
+    height: 302px;
+    width: 439;
+}
