@@ -1,14 +1,36 @@
+:root{
+    --yellow:#F59221
+}
 body{
     width: 100vw;
     height: 100vh;
 }
-.prodContainer{
+.conttainer{
     width: 90%;
-    margin: 20px auto;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+.projects-intro{
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+
+.projects-intro button{
+    border-radius: 12px;
+    padding: 5px 30px;
+    border: none;
+    background-color: var(--yellow);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.projects-Container{
     display: flex;
     gap: 30px;
 }
-.container{
+.card-container{
     border: 1px solid;
     margin-top: 0%;
     justify-content: space-between;
