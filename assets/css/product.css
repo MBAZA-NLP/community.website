@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 :root {
   --yellow: #f59221;
+=======
+
+:root{
+    --yellow:#F59221
+>>>>>>> e9bfc991d5ffa5f2bb92d16e09b0302c04ab6aef
 }
 body {
   width: 100vw;
@@ -113,6 +119,7 @@ header {
   }
 }
 
+<<<<<<< HEAD
 /* Header end */
 .projects-intro {
   padding: 10px 0px;
@@ -182,8 +189,15 @@ header {
   font-size: 14px;
   cursor: pointer;
 }
+=======
+.projects-Container{
+    display: flex;
+  
+}
+
+>>>>>>> e9bfc991d5ffa5f2bb92d16e09b0302c04ab6aef
 .prodContainer {
-  margin: 40px;
+  margin: 65px;
   display: block;
   align-items: center;
   justify-content: center;
@@ -317,7 +331,7 @@ header {
   width: 20px;
   height: 20px;
   margin: 5px;
-  margin-top: 2.5px;
+  margin-top: 0px;
 }
 .rateStar p {
   font-weight: 900;
@@ -329,17 +343,36 @@ header {
   height: 100px;
   margin-top: -10px;
 }
+.sttImages-project img {
+    align-self: flex-end;
+    margin-left: 25px;
+    width: 230px;
+    height: 100px;
+    margin-top: 10px;
+  }
 .fileImages {
   width: 50px;
   margin-left: 100px;
   margin-top: -40px;
 }
+.fileImages-project {
+    width: 50px;
+    margin-left: 100px;
+    margin-top: 10px;
+  }
 .ttsImages {
   width: 100px;
   margin-left: 55px;
   margin-right: 5px;
   margin-bottom: 50px;
 }
+.ttsImages-project {
+    margin-top: 40px;
+    width: 100px;
+    margin-left: 55px;
+    margin-right: 5px;
+    margin-bottom: 50px;
+  }
 .boxText {
   text-align: center;
 }
@@ -359,12 +392,14 @@ header {
 }
 .boxOptionsp1 {
   margin-left: 30px;
+
 }
-.box6.boxOptions {
-}
+
+
 .fileText {
   font-size: 130%;
 }
+
 
 /* responsive try */
 @media screen and (max-width: 1950px) {
