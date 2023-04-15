@@ -7,29 +7,29 @@ body {
     /* border: 2px solid green; */
     display: flex;
     justify-content: space-around;
-    margin: 50px;
+    margin: 65px;
     font-family: sans-serif Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .stat{
     /* border: 2px solid blue; */
     font-size: 30px;
-    margin-right: 90px;
-    height: 19px;
-    width: 42px;
-    font-family: bold;
+    margin: 5px 0px 0px 0px;
+    font-size: 17px;
+    width: 45px;
+    height: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
 }
 .chart1{
 /* border: 2px solid red; */
-margin-top: 90px;
-margin-left: -90px;
+margin: 35px 0px 0px 0px;
 height: 244px;
 width: 392px;
 
 }
 .chart2{
     /* border: 2px solid blueviolet; */
-    margin-top: 180px;
-    margin-right: 120px;
+    margin: 120px 120px 0 100px;
     height: 302px;
     width: 439;
 }
