@@ -1,84 +1,186 @@
-:root{
-    --yellow:#F59221
+:root {
+  --yellow: #f59221;
 }
-body{
-    width: 100vw;
-    height: 100vh;
+body {
+  width: 100vw;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow: hidden;
 }
-.conttainer{
-    width: 90%;
-    margin: 30px auto;
-    display: flex;
-    flex-direction: column;
+.conttainer {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
 }
-.projects-intro{
-    padding: 10px 0px;
-    margin-bottom: 20px;
+/* Header */
+header {
+  width: 100vw;
+  background: #002701;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  height: 120px;
+}
+.logo {
+  width: 300px;
+  height: 100px;
+  margin-top: 10px;
+  background: red;
+}
+.logo img {
+  width: 200px;
+  height: 130px;
+}
+.menu {
+}
+.menu ul {
+  display: flex;
+  list-style: none;
+}
+.menu ul li {
+  text-decoration: none;
+  margin: 30px 15px;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 1em;
+  color: white;
+  font-weight: 500;
+  font-family: "poppins", monospace;
+  transition: 0.4s;
+}
+.menu ul li a:hover {
+  color: #f59221;
+}
+.blog-button {
+  justify-self: flex-end;
+  margin: 40px;
+  float: right;
+  margin-left: 500px;
+}
+.blog-button button {
+  padding: 15px 30px;
+  border-radius: 40px;
+  color: black;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: "inter", "poppins", sans-serif;
+  background: #f59221;
+  border: none;
+  display: flex;
+  animation: move;
+  transition: 0.4s;
+}
+.blog-button button:hover {
+  background: #04391b;
+  color: white;
+  border: 1px solid #f59221;
+  box-shadow: 1px 1px 5px #f59221;
+}
+.blog-button button img:hover {
+  transition: translateX(0.2mm);
 }
 
-.projects-intro button{
-    border-radius: 12px;
-    padding: 5px 30px;
-    border: none;
-    background-color: var(--yellow);
-    color: white;
-    text-align: center;
-    font-weight: bold;
+/* @keyframes move {
+  100% {
+    background: #04391b;
+  }
+} */
+/* .blog-button button::before {
+  content: "BLOG";
+  padding: 15px 30px;
+  background: #04391b;
+  color: white;
+} */
+.blog-button button img {
+  width: 50%;
+  height: 20px;
+  margin: 0px 10px;
+}
+@media screen and (max-width: 1600px) {
+  .logo {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .logo {
+    margin-left: 20px;
+  }
 }
 
-.projects-Container{
-    display: flex;
-    gap: 30px;
+/* Header end */
+.projects-intro {
+  padding: 10px 0px;
+  margin-bottom: 20px;
 }
-.card-container{
-    border: 1px solid;
-    margin-top: 0%;
-    justify-content: space-between;
-    border-radius: 20px 20px 20px 20px;
-    width: 21% ;
-    height:9% ;
+
+.projects-intro button {
+  border-radius: 12px;
+  padding: 5px 30px;
+  border: none;
+  background-color: var(--yellow);
+  color: white;
+  text-align: center;
+  font-weight: bold;
 }
-   
+
+.projects-Container {
+  display: flex;
+  gap: 30px;
+}
+.card-container {
+  border: 1px solid;
+  margin-top: 0%;
+  justify-content: space-between;
+  border-radius: 20px 20px 20px 20px;
+  width: 21%;
+  height: 9%;
+}
+
 .first {
-    display: flex;
-    flex-direction:row;
-    justify-content: flex-end;
-    padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
-.first p{
-   font-family: sans-serif;
-    
-    font-weight: bolder;
+.first p {
+  font-family: sans-serif;
+
+  font-weight: bolder;
 }
-.first img{
+.first img {
   padding-top: 15px;
-    height: 19px;
+  height: 19px;
 }
 
-.second img{
-    padding-left: 49px;
-     height: 100px;
+.second img {
+  padding-left: 49px;
+  height: 100px;
 }
-.third{
-    width: 80%;
-    margin: 5px auto;
+.third {
+  width: 80%;
+  margin: 5px auto;
 }
-.third h3{
-    font-size: 14px;
-    font-weight: bold;
+.third h3 {
+  font-size: 14px;
+  font-weight: bold;
 }
 
-.fourth{
-    width: 80%;
-    margin: 5px auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.fourth {
+  width: 80%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.fourth p{
-    
-    font-size:14px;
-    cursor: pointer;
+.fourth p {
+  font-size: 14px;
+  cursor: pointer;
 }
 .prodContainer {
   margin: 40px;
@@ -265,8 +367,16 @@ body{
 }
 
 /* responsive try */
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1950px) {
   body {
+  }
+  header {
+    height: 160px;
+  }
+
+  .menu {
+    margin-top: 20px;
+    font-size: 1.3em;
   }
   .upperCards {
     display: flex;
@@ -303,6 +413,13 @@ body{
 }
 
 @media screen and (max-width: 1285px) {
+  .logo {
+    width: 300px;
+    height: 100px;
+  }
+  .menu {
+    margin: 20px;
+  }
   .title {
     text-align: center;
     margin: 0px 00px;
