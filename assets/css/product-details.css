@@ -836,7 +836,7 @@
     margin-top: 15px;
   }
   .box {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     height: 100%;
     width: 85%;
