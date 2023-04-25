@@ -1,17 +1,14 @@
-<<<<<<< HEAD
 :root {
   --yellow: #f59221;
-=======
-
-:root{
-    --yellow:#F59221
->>>>>>> e9bfc991d5ffa5f2bb92d16e09b0302c04ab6aef
+}
+:root {
+  --yellow: #f59221;
 }
 body {
   width: 100vw;
   box-sizing: border-box;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .conttainer {
   width: 90%;
@@ -22,7 +19,8 @@ body {
 /* Header */
 header {
   width: 100vw;
-  background: #002701;
+  background: rgba(0, 39, 1, 1);
+  filter: blur(0.4);
   margin-top: -10px;
   margin-left: -10px;
   margin-right: -10px;
@@ -30,16 +28,17 @@ header {
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  height: 120px;
+  height: 100px;
+  position: sticky;
+  top: 0px;
 }
 .logo {
-  width: 300px;
+  width: 320px;
   height: 100px;
   margin-top: 10px;
-  background: red;
 }
 .logo img {
-  width: 200px;
+  width: 220px;
   height: 130px;
 }
 .menu {
@@ -68,6 +67,9 @@ header {
   margin: 40px;
   float: right;
   margin-left: 500px;
+
+  height: 50px;
+  width: 140px;
 }
 .blog-button button {
   padding: 15px 30px;
@@ -88,26 +90,62 @@ header {
   border: 1px solid #f59221;
   box-shadow: 1px 1px 5px #f59221;
 }
-.blog-button button img:hover {
-  transition: translateX(0.2mm);
+.line {
+  width: 22px;
+  height: 2px;
+  background: black;
+  margin-top: 5px;
+  position: absolute;
+  right: 0px;
+}
+.blog {
+  z-index: 3;
+}
+.arrow {
+  border-right: 3px solid black;
+  border-top: 3px solid black;
+  height: 10px;
+  width: 10px;
+  rotate: 45deg;
+  border-radius: 2px;
+  position: absolute;
+  right: 0;
+}
+.arr {
+  display: flex;
+  gap: -5px;
+  position: relative;
+  width: 30px;
+
+  margin-left: 5px;
+}
+.blog-button::before {
+  content: "";
+  text-align: center;
+  height: inherit;
+  width: inherit;
+  display: none;
+  border-radius: 40px;
+  background: #002701;
+  transition: 0.5s cubic-bezier(1, 0, 0.6, 1);
+  position: absolute;
+}
+.blog-button button:hover .arr {
+  -ms-transform-origin-x: 12px;
+  margin-left: 5px;
+}
+.blog-button button:hover .arrow {
+  border-right: 3px solid white;
+  border-top: 3px solid white;
+}
+.blog-button button:hover .line {
+  background: white;
+}
+.blog-button button:hover .blog-button::before {
+  display: block;
+  color: white;
 }
 
-/* @keyframes move {
-  100% {
-    background: #04391b;
-  }
-} */
-/* .blog-button button::before {
-  content: "BLOG";
-  padding: 15px 30px;
-  background: #04391b;
-  color: white;
-} */
-.blog-button button img {
-  width: 50%;
-  height: 20px;
-  margin: 0px 10px;
-}
 @media screen and (max-width: 1600px) {
   .logo {
     margin-left: 20px;
@@ -119,7 +157,6 @@ header {
   }
 }
 
-<<<<<<< HEAD
 /* Header end */
 .projects-intro {
   padding: 10px 0px;
@@ -189,13 +226,10 @@ header {
   font-size: 14px;
   cursor: pointer;
 }
-=======
-.projects-Container{
-    display: flex;
-  
+.projects-Container {
+  display: flex;
 }
 
->>>>>>> e9bfc991d5ffa5f2bb92d16e09b0302c04ab6aef
 .prodContainer {
   margin: 65px;
   display: block;
@@ -344,22 +378,22 @@ header {
   margin-top: -10px;
 }
 .sttImages-project img {
-    align-self: flex-end;
-    margin-left: 25px;
-    width: 230px;
-    height: 100px;
-    margin-top: 10px;
-  }
+  align-self: flex-end;
+  margin-left: 25px;
+  width: 230px;
+  height: 100px;
+  margin-top: 10px;
+}
 .fileImages {
   width: 50px;
   margin-left: 100px;
   margin-top: -40px;
 }
 .fileImages-project {
-    width: 50px;
-    margin-left: 100px;
-    margin-top: 10px;
-  }
+  width: 50px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
 .ttsImages {
   width: 100px;
   margin-left: 55px;
@@ -367,12 +401,12 @@ header {
   margin-bottom: 50px;
 }
 .ttsImages-project {
-    margin-top: 40px;
-    width: 100px;
-    margin-left: 55px;
-    margin-right: 5px;
-    margin-bottom: 50px;
-  }
+  margin-top: 40px;
+  width: 100px;
+  margin-left: 55px;
+  margin-right: 5px;
+  margin-bottom: 50px;
+}
 .boxText {
   text-align: center;
 }
@@ -392,14 +426,11 @@ header {
 }
 .boxOptionsp1 {
   margin-left: 30px;
-
 }
-
 
 .fileText {
   font-size: 130%;
 }
-
 
 /* responsive try */
 @media screen and (max-width: 1950px) {
@@ -471,9 +502,7 @@ header {
   .fileText {
     font-size: 0.95em;
   }
-  .boxOptions {
-    /* font-size: 0.94em; */
-  }
+
   .boxOptions p {
     margin: 10px 45px 0 20px;
     font-weight: 600;

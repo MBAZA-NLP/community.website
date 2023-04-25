@@ -29,7 +29,6 @@
   
       <!-- Add your site or application content here -->
       <!-- preloader -->
-<<<<<<< HEAD
       <div id="preloader">
           <div class="preloader">
               <span></span>
@@ -38,7 +37,7 @@
       </div>
       <!-- preloader end  -->
      <!-- Header stat -->
-     <header>
+     <header id="nav">
       <div class="logo">
         <a class="logo-img" href="index.html"><img src="/assets/img/logo/MBAZA-LOGO-WHITE.png"
          alt="" style="width: 40%; padding-top: 5px; padding-bottom: 5px; padding-left: 10px;"></a>
@@ -53,18 +52,27 @@
             </ul>
            </div>
            <div class="blog-button">
-            <button>BLOG <img src="/assets/img/shape/Vector.svg" alt=""></button>
+            <button><div class="blog">BLOG </div><div class="arr"><div class="line"></div><div class="arrow"></div></div></button>
            </div>
      </header>
-=======
-     
-    
->>>>>>> e9bfc991d5ffa5f2bb92d16e09b0302c04ab6aef
+     <script>
+      const nav = document.getElementsById('nav');
+      const offset = nav.offsetTop;
+      window.addEventListener('scroll', () =>{
+        if(window.pageXOffset >= 10){
+          nav.style.position= 'sticky'
+          nav.style.background= '#002701'
+        }
+        else{
+          nav.classListremove('sticky');
+        }
+      })
+     </script>
     <div class="prodContainer">
       <div class="upperPart">
         <div class="title">
           <h4 class="mainTitle">
-            <span class="line"></span> Projects <span class="line"></span>
+            <span ></span> Projects <span ></span>
           </h4>
         </div>
         <div class="status">
