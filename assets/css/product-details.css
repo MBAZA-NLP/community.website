@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 body{
-    margin: 0px;
+    /* margin: 0px;
   border: 0px;
-  color: fff;
+  color: fff; */
     margin: 2px 0px 0px 171px;
     background: #F5F5F5;
 }
@@ -14,11 +14,11 @@ body{
     font-family: sans-serif Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .stat{
-    /* border: 2px solid blue; */
-    font-size: 30px;
+    border: 2px solid blue;
+    font-size: 100px;
     margin: 5px 0px 0px 0px;
-    font-size: 17px;
-    width: 45px;
+    font-size: 50px;
+    width: 100px;
     height: 20px;
     font-weight: bold;
     font-family: sans-serif;
@@ -36,6 +36,7 @@ width: 392px;
     height: 302px;
     width: 439;
 }
+/* ------------this is where stats end-------- */
 .container{
   height: 10vh;
   text-decoration: none;
@@ -138,17 +139,20 @@ i{
     font-size: 12px;
     line-height: 20px;
 }
+/* -----------this is wher page-pd-text ends-------- */
+
+
 .cont1 {
   /* border: 2px solid green; */
   width: 10%;
-  margin-left: 40px;
+  margin-left: 40%;
   margin-top: 30px;
 }
 .feed-txt {
   /* border: 1px solid yellow; */
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 13px; 
 }
 .para1 {
   /* border: 1px solid yellowgreen; */
@@ -179,7 +183,7 @@ i{
 .bttn {
   /* border: 2px solid tomato; */
   border: 0px;
-  width: 20%;
+  width: 40%;
   height: 25px;
   background-color: orange;
   border-radius: 50px;
@@ -363,14 +367,6 @@ i{
   margin-left: 10px;
   margin-top: 9px;
 }
-/* 
-*
-*
-*
-*
-*
-*
-*/
 @media screen and (min-width: 320px) {
   .cont1 {
     /* border: 2px solid green; */
@@ -942,21 +938,24 @@ i{
 @media screen and (min-width: 1024px) {
   .cont1 {
     /* border: 2px solid green; */
-    margin-left: 5%;
+    margin-left: 8%;
   }
   .feed-txt {
     /* border: 1px solid orange; */
     font-size: 13px;
+
   }
   .cont2 {
-    /* border: 2px solid navy; */
+    border: 2px solid navy;
     width: 75%;
     padding-top: 4px;
-    margin: 1% 0% 0% 9%;
+    margin: 1% 0% 0% 12%;
   }
   .txt1 {
-    /* border: 1px solid purple; */
+    border: 1px solid purple;
+    width: 20%;
     font-size: 13px;
+    margin-left: 90px;
   }
   .txt2 {
     /* border: 1px solid plum; */
@@ -1019,15 +1018,15 @@ i{
   }
   .smll-txt {
     /* border: 2px solid green; */
-    width: 57%;
+    width: 78%;
     font-size: 10px;
     margin: 3% 0% 0% 20%;
   }
   .smll-txt1 {
     /* border: 2px solid greenyellow; */
-    width: 32%;
+    width: 35%;
     font-size: 10px;
-    margin: 2% 0% 0% 33%;
+    margin: 2% 0% 0% 100%;
   }
   .smll-txt2-1 {
     /* border: 1px solid yellow; */
@@ -1089,4 +1088,7 @@ i{
     /* border: 1px solid yellow; */
     margin: 6% 0% 0% 3%;
   }
+}
+.stat{
+    font-size: 40px;
 }
