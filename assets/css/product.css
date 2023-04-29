@@ -1,35 +1,81 @@
-
-:root{
-    --yellow:#F59221
-}
-body{
-    width: 100vw;
-    height: 100vh;
-}
-.conttainer{
-    width: 90%;
-    margin: 30px auto;
-    display: flex;
-    flex-direction: column;
-}
-.projects-intro{
-    padding: 10px 0px;
-    margin-bottom: 20px;
+:root {
+  --yellow: #f59221;
 }
 
-.projects-intro button{
-    border-radius: 12px;
-    padding: 5px 30px;
-    border: none;
-    background-color: var(--yellow);
-    color: white;
-    text-align: center;
-    font-weight: bold;
+
+
+
+/* Header end */
+.projects-intro {
+  padding: 10px 0px;
+  margin-bottom: 20px;
 }
 
-.projects-Container{
-    display: flex;
-  
+.projects-intro button {
+  border-radius: 12px;
+  padding: 5px 30px;
+  border: none;
+  background-color: var(--yellow);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.projects-Container {
+  display: flex;
+  gap: 30px;
+}
+.card-container {
+  border: 1px solid;
+  margin-top: 0%;
+  justify-content: space-between;
+  border-radius: 20px 20px 20px 20px;
+  width: 21%;
+  height: 9%;
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+.first p {
+  font-family: sans-serif;
+
+  font-weight: bolder;
+}
+.first img {
+  padding-top: 15px;
+  height: 19px;
+}
+
+.second img {
+  padding-left: 49px;
+  height: 100px;
+}
+.third {
+  width: 80%;
+  margin: 5px auto;
+}
+.third h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.fourth {
+  width: 80%;
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fourth p {
+  font-size: 14px;
+  cursor: pointer;
+}
+.projects-Container {
+  display: flex;
 }
 
 .prodContainer {
@@ -180,22 +226,22 @@ body{
   margin-top: -10px;
 }
 .sttImages-project img {
-    align-self: flex-end;
-    margin-left: 25px;
-    width: 230px;
-    height: 100px;
-    margin-top: 10px;
-  }
+  align-self: flex-end;
+  margin-left: 25px;
+  width: 230px;
+  height: 100px;
+  margin-top: 10px;
+}
 .fileImages {
   width: 50px;
   margin-left: 100px;
   margin-top: -40px;
 }
 .fileImages-project {
-    width: 50px;
-    margin-left: 100px;
-    margin-top: 10px;
-  }
+  width: 50px;
+  margin-left: 100px;
+  margin-top: 10px;
+}
 .ttsImages {
   width: 100px;
   margin-left: 55px;
@@ -203,12 +249,12 @@ body{
   margin-bottom: 50px;
 }
 .ttsImages-project {
-    margin-top: 40px;
-    width: 100px;
-    margin-left: 55px;
-    margin-right: 5px;
-    margin-bottom: 50px;
-  }
+  margin-top: 40px;
+  width: 100px;
+  margin-left: 55px;
+  margin-right: 5px;
+  margin-bottom: 50px;
+}
 .boxText {
   text-align: center;
 }
@@ -240,15 +286,21 @@ margin-top: 21px;
 
 }
 
-
 .fileText {
   font-size: 130%;
 }
 
-
 /* responsive try */
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1950px) {
   body {
+  }
+  header {
+    height: 160px;
+  }
+
+  .menu {
+    margin-top: 20px;
+    font-size: 1.3em;
   }
   .upperCards {
     display: flex;
@@ -285,6 +337,13 @@ margin-top: 21px;
 }
 
 @media screen and (max-width: 1285px) {
+  .logo {
+    width: 300px;
+    height: 100px;
+  }
+  .menu {
+    margin: 20px;
+  }
   .title {
     text-align: center;
     margin: 0px 00px;
@@ -301,9 +360,7 @@ margin-top: 21px;
   .fileText {
     font-size: 0.95em;
   }
-  .boxOptions {
-    /* font-size: 0.94em; */
-  }
+
   .boxOptions p {
     margin: 10px 45px 0 20px;
     font-weight: 600;
