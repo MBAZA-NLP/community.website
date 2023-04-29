@@ -79,6 +79,8 @@
 }
 
 .prodContainer {
+  width: 90%;
+  margin: auto;
   margin: 65px;
   display: block;
   align-items: center;
