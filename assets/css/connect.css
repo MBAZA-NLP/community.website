@@ -1,0 +1,128 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.connect-container {
+  width: 90%;
+  height: 60vh;
+  margin: 100px auto;
+  height: 60vh;
+  font-family: "poppins", sans-serif;
+  display: inline-flex;
+  gap: 5%;
+  /* background: grey; */
+  padding: 10px;
+}
+.connect-content {
+  width: 50%;
+}
+
+.connect-icons {
+  width: 45%;
+  height: 100%;
+  background: white;
+  position: relative;
+}
+.square {
+  height: 60%;
+  width: 60%;
+  background: rgba(0, 217, 255, 0.3);
+  /* margin: auto; */
+  transform: translate(30%, 30%);
+}
+.mbaza-hand {
+  height: 60%;
+  width: 40%;
+  border-radius: 50%;
+  background: rgb(59, 59, 167);
+  /* margin: auto; */
+  transform: translate(70%, 30%);
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* border: 0.3px solid black; */
+  position: absolute;
+  background: white;
+  box-shadow: 1px 1px 10px 1px rgb(83, 82, 82);
+  transform: scale(0.8);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.social-icon img {
+  border-radius: 50%;
+  width: 60%;
+  height: 60%;
+  transform: translate(30%, 30%);
+}
+.social-icon1 {
+  transform: translate(40%, 60%);
+  top: 5px;
+  left: 90px;
+}
+.social-icon2 {
+  transform: translate(10%, 30%);
+  top: 120px;
+  left: 80px;
+}
+.social-icon3 {
+  transform: translate(20%, 33%);
+  top: 0px;
+  left: 250px;
+}
+.social-icon4 {
+  transform: translate(22%, 68%);
+  /* top: ; */
+  right: 95px;
+}
+.social-icon5 {
+  transform: translate(23%, 89%);
+  top: 200px;
+  left: 140px;
+}
+.social-icon6 {
+  transform: translate(5%, 50%);
+  bottom: 40px;
+  left: 255px;
+}
+.social-icon7 {
+  transform: translate(90%, 40%);
+  top: 40px;
+  right: 120px;
+}
+.social-icon8 {
+  transform: translate(80%, 68%);
+  top: 115px;
+  right: 150px;
+}
+.social-icon9 {
+  transform: translate(5%, 74%);
+  top: 60px;
+  left: 310px;
+  /* background: red; */
+}
+.social-icon:hover {
+  /* transform: scaleY(1); */
+  box-shadow: 1px 1px 15px 1px rgb(47, 47, 47);
+}
+.connect-content {
+  padding: 30px;
+}
+.connect-content h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.connect-content p {
+  font-size: 1.1em;
+  line-height: 150%;
+}
+.connect-content a {
+  margin: 5px;
+}
