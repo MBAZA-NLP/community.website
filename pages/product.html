@@ -1,15 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mbaza product List</title>
-    <link rel="stylesheet" href="../assets/css/product.css"/>
-</head>
-<body>  
-    <div class="prodContainer">
+    <link rel="stylesheet" href="../assets/css/product.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,900;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
 
+    <!--Adding header  -->
+  </head>
+
+  <body>
+      <!--[if lte IE 9]>
+              <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+          <![endif]-->
+  
+      <!-- Add your site or application content here -->
+      <!-- preloader -->
+     
+    
+      <div id="preloader">
+          <div class="preloader">
+              <span></span>
+              <span></span>
+          </div>
+      </div>
+      <!-- preloader end  -->
+     <!-- Header stat -->
+
+     <header id="nav">
+      <div class="logo">
+        <a class="logo-img" href="index.html"><img src="/assets/img/logo/MBAZA-LOGO-WHITE.png"
+         alt="" ></a>
+           </div>
+           <div class="menu">
+            <ul>
+              <li><a href=""> Home</a></li>
+              <li><a href=""> Community</a></li>
+              <li><a href=""> Programs</a></li>
+              <li><a href=""> Events</a></li>
+              <li><a href="">Gallery </a></li>
+            </ul>
+           </div>
+           <div class="blog-button">
+            <button><div class="blog">BLOG </div><div class="arr"><div class="line"></div><div class="arrow"></div></div></button>
+           </div>
+           <div class="burger" id="burger">
+            <div class="bline"></div>
+            <div class="bline"></div>
+            <div class="bline"></div>
+            <div class="bline"></div>
+           </div>
+     </header>
+     <script>
+      const nav = document.getElementsById('nav');
+      const offset = nav.offsetTop;
+      window.addEventListener('scroll', () =>{
+        if(window.pageXOffset >= navOffset){
+          nav.style.position= 'sticky'
+        }
+        else{
+          nav.classListremove('sticky');
+        }
+      })
+     </script>
+     <div class="burger-menu">
+      <div class="cross" id="cross">
+        <div class="cross1 cro"></div>
+        <div class="cross2 cro"></div>
+      </div>
+      <div class=" bmenu">
+        <ul>
+          <li><a href=""> Home</a></li>
+          <li><a href=""> Community</a></li>
+          <li><a href=""> Programs</a></li>
+          <li><a href=""> Events</a></li>
+          <li><a href="">Gallery </a></li>
+        </ul>
+       </div>
+     </div>
+     <script>
+      let cross = document.getElementById('cross')
+      let burger = document.getElementById('burger')
+      let burgerMenu = document.querySelector('.burger-menu')
+
+      burger.addEventListener('click', ()=>{
+        burgerMenu.style.display = 'block';
+      })
+      cross.addEventListener('click', ()=>{
+        burgerMenu.style.display = 'none';
+      })
+
+     </script>
+     
+    <div class="prodContainer">
+      <div class="upperPart">
+        <div class="title">
+          <h4 class="mainTitle">
+            <span class="line"></span> Projects <span class="line"></span>
+          </h4>
+        </div>
+        <div class="status">
+          <button class="btn doneButton active">
+            Done <span class="amount">(131)</span>
+          </button>
+          <button class="btn progressButton">
+            In progress <span class="amount">(3)</span>
+          </button>
+        </div>
+      </div>
+      <div class="lowerPart">
+        <div class="align">
+          <div class="accomplished">
+            <p>Projects accomplished <span class="amount">(131)</span></p>
+          </div>
+          <div>
+            <button class="btn goodButton active">
+              Good <span class="amount">(4)</span>
+            </button>
+            <button class="btn mediumButton">
+              Medium <span class="amount">(2)</span>
+            </button>
+            <button class="btn BasicButton">
+              Basic <span class="amount">(1)</span>
+            </button>
+          </div>
+        </div>
+        <div class="feed">
+          <p class="feedBack">Feel free to try out and leave us a feedback</p>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="upperCards">
+          <div class="box" class="box1">
+            <div class="rateStar">
+             <img src="../assets/img/product/star.png" alt="" />
+             <p>4.5</p>
+            </div>
+            <div class="sttImages">
+              <img src="../assets/img/product/stt.png" alt="" />
+            </div>
+            <div class="boxText sttText">
+              <h4>Speech To Text</h4>
+              <p>Speak Kinyarwanda and get the test of the spoken words</p>
+            </div>
+            <div class="boxOptions">
+              <div>
+                <p class="boxOptionsp1">Try it out</p>
+              </div>
+              <div>
+                <p>Read more</p>
+              </div>
+            </div>
+          </div>
+          <div class="box" class="box2">
+            <div class="rateStar">
+              <img src="../assets/img/product/star.png" alt="" />
+              <p>4.5</p>
+            </div>
+            <div class="ttsImages">
+              <img src="../assets/img/product/tts.png" alt="" />
+            </div>
+            <div class="boxText ttsText">
+              <h4>Text to Speech</h4>
+              <p>
+                Write Kinyarwanda and get audio voice of the written sentence
+              </p>
+            </div>
+            <div class="boxOptions">
+              <p class="boxOptionsp1">Try it out</p>
+              <p>Read more</p>
+            </div>
+          </div>
+          <div class="box" class="box3">
+            <div class="rateStar">
+              <img src="../assets/img/product/star.png" alt="" />
+              <p>4.5</p>
+            </div>
+            <div class="fileImages">
+              <img src="../assets/img/product/file.png" alt="" />
+            </div>
+            <div class="boxText fileText">
+              <h4>Kinyarwanda Dataset SST</h4>
+              <p>
+                Over 2000 hours of Kinyarwanda voice data, making it the
+                second-biggest open voice dataset on the common voice platform
+              </p>
+            </div>
+            <div class="boxOptions fileOption">
+              <p>Download</p>
+              <p class="boxOptionsp2">Read more</p>
+            </div>
+          </div>
+        </div>
+        <div class="lowerCards">
+          <div class="box" class="box4">
+            <div class="rateStar">
+              <img src="../assets/img/product/star.png" alt="" />
+              <p>4.5</p>
+            </div>
+            <div class="sttImages">
+              <img src="../assets/img/product/stt.png" alt="" />
+            </div>
+            <div class="boxText sttText">
+              <h4>Speech To Text</h4>
+              <p>Speak Kinyarwanda and get the test of the spoken words</p>
+            </div>
+            <div class="boxOptions">
+              <p class="boxOptionsp1">Try it out</p>
+              <p>Read more</p>
+            </div>
+          </div>
+          <div class="box" class="box5">
+            <div class="rateStar">
+              <img src="../assets/img/product/star.png" alt="" />
+              <p>4.5</p>
+            </div>
+            <div class="ttsImages">
+              <img src="../assets/img/product/tts.png" alt="" />
+            </div>
+            <div class="boxText ttsText">
+              <h4>Text to Speech</h4>
+              <p>
+                Write Kinyarwanda and get audio voice of the written sentence
+              </p>
+            </div>
+            <div class="boxOptions">
+              <p class="boxOptionsp1">Try it out</p>
+              <p>Read more</p>
+            </div>
+          </div>
+          <div class="box" class="box6">
+            <div class="rateStar">
+              <img src="../assets/img/product/star.png" alt="" />
+              <p>4.5</p>
+            </div>
+            <div class="fileImages">
+              <img src="../assets/img/product/file.png" alt="" />
+            </div>
+            <div class="boxText fileText">
+              <h4>Kinyarwanda Dataset SST</h4>
+              <p>
+                Over 2000 hours of Kinyarwanda voice data, making it the
+                second-biggest open voice dataset on the common voice platform
+              </p>
+            </div>
+            <div class="boxOptions fileOption">
+              <p class="boxOptionsp1">Download</p>
+              <p>Read more</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cards">
+      <div class="projects-intro">
+        <h3>Projects under debvelopment [3]</h3>
+        <p>would you like to join and continue </p>
+        <button class="btn active">Join us</button>
+      </div>
+      <div class="projects-Container">
+       
+        <div class="lowerCards">
+          <div class="box" class="box4">
+            
+            <div class="sttImages-project">
+              <img src="../assets/img/product/sts.png" alt="" />
+            </div>
+            <div class="boxText sttText">
+              <h4>Speech To Text</h4>
+              <p>Speak Kinyarwanda and get the test of the spoken words</p>
+            </div>
+            <div class="boxOptions">
+              <p class="boxOptionsp1"><img src="../assets/img/product/stats.png"></p>
+              <p id="more">Read more</p>
+            </div>
+          </div>
+          <div class="box" class="box5">
+         
+            <div class="ttsImages-project">
+              <img src="../assets/img/product/tts.png" alt="" />
+            </div>
+            <div class="boxText ttsText">
+              <h4>Text to Speech</h4>
+              <p>
+                Write Kinyarwanda and get audio voice of the written sentence
+              </p>
+            </div>
+            <div class="boxOptions">
+              <p class="boxOptionsp1"><img src="../assets/img/product/stats.png"></p>
+              <p id="more">Read more</p>
+            </div>
+          </div>
+          <div class="box" class="box6">
+           
+            <div class="fileImages-project">
+              <img src="../assets/img/product/file.png" alt="" />
+            </div>
+            <div class="boxText fileText">
+              <h4>Kinyarwanda Dataset SST</h4>
+              <p>
+                Over 2000 hours of Kinyarwanda voice data, making it the
+                second-biggest open voice dataset on the common voice platform
+              </p>
+            </div>
+            <div class="boxOptions">
+              <p class="boxOptionsp1"><img src="../assets/img/product/stats.png"></p>
+              <p id="more">Read more</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
     </div>
-</body>
+    </div>
+  </body>
 </html>
