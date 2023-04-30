@@ -416,6 +416,8 @@ header {
 }
 
 .prodContainer {
+  width: 90%;
+  margin: auto;
   margin: 65px;
   display: block;
   align-items: center;
@@ -608,9 +610,13 @@ header {
 }
 .boxOptions p:hover {
   color: orange;
+  cursor: pointer;
 }
 .boxOptionsp1 {
   margin-left: 30px;
+}
+.boxOptions #more {
+  margin-top: 21px;
 }
 
 .fileText {
