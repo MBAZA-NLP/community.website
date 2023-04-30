@@ -4,7 +4,7 @@
 }
 body {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 .connect-container {
@@ -63,49 +63,39 @@ body {
   transform: translate(30%, 30%);
 }
 .social-icon1 {
-  transform: translate(40%, 60%);
-  top: 5px;
-  left: 90px;
+  top: 8%;
+  left: 20%;
 }
 .social-icon2 {
-  transform: translate(10%, 30%);
-  top: 120px;
-  left: 80px;
+  top: 35%;
+  left: 12%;
 }
 .social-icon3 {
-  transform: translate(20%, 33%);
-  top: 0px;
-  left: 250px;
+  top: 0%;
+  left: 50%;
 }
 .social-icon4 {
-  transform: translate(22%, 68%);
-  /* top: ; */
-  right: 95px;
+  right: 20%;
 }
 .social-icon5 {
-  transform: translate(23%, 89%);
-  top: 200px;
-  left: 140px;
+  top: 60%;
+  left: 30%;
 }
 .social-icon6 {
-  transform: translate(5%, 50%);
-  bottom: 40px;
-  left: 255px;
+  bottom: 10%;
+  left: 56%;
 }
 .social-icon7 {
-  transform: translate(90%, 40%);
-  top: 40px;
-  right: 120px;
+  top: 8%;
+  right: 17%;
 }
 .social-icon8 {
-  transform: translate(80%, 68%);
-  top: 115px;
-  right: 150px;
+  top: 40%;
+  right: 21%;
 }
 .social-icon9 {
-  transform: translate(5%, 74%);
-  top: 60px;
-  left: 310px;
+  top: 20%;
+  left: 60%;
   /* background: red; */
 }
 .social-icon:hover {
@@ -125,4 +115,15 @@ body {
 }
 .connect-content a {
   margin: 5px;
+}
+@media screen and (max-width: 800px) {
+  .connect-container {
+    display: block;
+  }
+  .connect-icons {
+    width: 100%;
+  }
+  .connect-content {
+    width: 100%;
+  }
 }
