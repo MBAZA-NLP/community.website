@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.intro {
+    width: 90%;
+    margin: auto;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.africa-img {
+    width: 40%;
+    position: relative;
+}
+
+
+
+.africa-img img {
+    width: 100%;
+}
+
+.left-side {
+    width: 60%;
+}
+
+.lower {
+    width: 100%;
+    display: flex;
+    gap: 5rem;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.lower-right {
+    width: 50%;
+}
+
+.lower-left {
+    width: 50%;
+}
+.lower-left p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+.lower-right p{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.welcoming-part {
+    margin: 50px 10px 0px 100px;
+}
+.welcoming-part p{
+    font-size: 20px;
+    text-align: center;
+}
+
+.welcoming-part h2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.lower-left h2 {
+    display: flex;
+    justify-content: center;
+  
+}
+
+.lower-right h2 {
+    display: flex;
+    justify-content: center;
+ 
+}
+hr{
+    width: 13px;
+   font-weight: bold;
+    font-size: medium;
+    color: black;
+    margin: auto;
+}
+
