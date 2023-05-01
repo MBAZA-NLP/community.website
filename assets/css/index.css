@@ -1,0 +1,168 @@
+body{
+    font-family: Optimistic Text,-apple-system,ui-sans-serif,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    margin:0;
+    padding:0;
+}
+
+.hero {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    background-image: url("../img/project/NPL30-min.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dark-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.7) 50%, rgba(0,0,0,0.1) 100%);
+}
+.content-layer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 10%;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+.content-logo{
+    height: inherit;
+    margin-top:2em;
+}
+.content-left {
+    flex: 1;
+    text-align: center;
+}
+.content-right {
+    flex: 1;
+    font-size: 20px;
+}
+
+.content-left-top {
+	margin-bottom: 1em;
+    font-size: 50px;
+}
+.content-left-top h1{
+    margin-bottom: 0;
+}
+.content-left-top span{
+    font-weight: 400;
+}
+
+.content-left-bottom {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-explore {
+	background-color: #c5761d;
+	color: white;
+	border: none;
+	border-radius: 30px;
+	padding: 20px 40px;
+	margin-right: 1em;
+	cursor: pointer;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+.btn-explore:hover{
+    background-color: #F59221;
+}
+
+.btn-contact {
+	background-color: transparent;
+	color: white;
+	border: 2px solid white;
+	border-radius: 30px;
+	padding: 20px 40px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+	cursor: pointer;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+.date-section {
+	display: flex;
+	align-items: center;
+	color: white;
+}
+
+.date-icon {
+	margin-right: 1em;
+	font-size: 2em;
+}
+
+.date-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.date-day {
+	font-size: 1.8em;
+	margin-bottom: -0.2em;
+}
+
+.date-month {
+	font-size: 2em;
+	font-weight: bold;
+    color:#A2B9C1;
+}
+
+.location-section {
+	display: flex;
+	align-items: center;
+	color: white;
+}
+
+.location-icon {
+	margin-right: 1em;
+	font-size: 2em;
+}
+
+.location-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.location-city {
+	font-size: 1.5em;
+}
+
+.location-building {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+#location-building{
+    color: #A2B9C1
+}
+
+.location-floor {
+	font-size: 1.2em;
+}
+
+.event-section {
+	margin-top: 1em;
+}
+.event-section h2{
+    font-weight: 400;
+}
+
+hr {
+	width: 250px;
+	border: 1px solid white;
+	margin: 1em auto;
+    margin-left: 0;
+}
