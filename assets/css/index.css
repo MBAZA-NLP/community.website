@@ -382,4 +382,164 @@ hr {
     padding-left: 45vw;
   }
   
-
+  .blog {
+    /* margin: auto; */
+    display: flex;
+    gap: 15%;
+    margin: 9%;
+    flex-direction: row;
+    
+    }
+    .introduction{
+        order: 1;
+    }
+    .introduction .introduction1{
+        display: flex;
+        border-radius: 20px 20px 10px 10px;
+        
+    }
+    .introduction1 img{
+        width: 140px;
+        padding-bottom: 20px;
+       
+    }
+    .paragraph {
+    padding-top: 15px;
+    }
+    .paragraph .intro{
+        padding-left: 20px;
+        width: 220px;
+        font-size: 17px;
+    }
+    .paragraph .date{
+        padding-top: 6px;
+        padding-left: 20px;
+    font-size: 13px;
+    }
+    .introduction .introduction2{
+        display: flex;
+    }
+    .introduction2 img{
+        width: 140px;
+        padding-bottom: 20px;
+    }
+    
+    .introduction .introduction3{
+        display: flex;
+    }
+    .introduction3 img{
+        width: 140px;
+    }
+    .insights {
+    width: 420px;
+    order: 2;
+    }
+    .insights h2{
+        height: 50px;   
+    }
+    .insights p{
+        height: 180px;
+        text-align: left;
+    }
+    .insights h3{
+        text-align: center;
+       
+    }
+    .insights h3:hover{
+        color:#28738A;
+        cursor: pointer;
+    }
+    
+    
+    /* RESPONSIVENESS */
+    
+    @media screen and (max-width:400px){
+     .blog{
+        flex-direction: column;
+        width: 100%;
+     }
+     .introduction{
+        order: 2;
+     }
+     .insights{
+        order: 1;
+     }
+     .insights h2{
+    height: 50px;
+    font-size: 20px;
+     }
+     .insights p{
+        width: 280px;
+        height: 230px;
+        font-size: 15px;
+     }
+     .insights h3{
+        height: 50px;
+        font-size: 16px;
+        margin-right: 140px;
+     }
+        .introduction1 img{
+        width: 100px;
+      }  
+      .introduction2 img{
+        width: 100px;
+      }  
+      .introduction3 img{
+        width: 100px;
+      }  
+      .paragraph{
+        padding-top: 6px;
+      }
+    .paragraph .intro{
+        font-size: 14px;
+    }
+    .paragraph .date{
+        font-size: 12px;
+    }
+    }
+    
+    @media screen and (max-width:600px){
+        .blog{
+           flex-direction: column;
+           width: 100%;
+        }
+        .introduction{
+           order: 2;
+        }
+        .insights{
+           order: 1;
+        }
+        .insights h2{
+       height: 50px;
+       font-size: 24px;
+        }
+        .insights p{
+           width: 350px;
+           height: 280px;
+           font-size: 18px;
+        }
+        .insights h3{
+           height: 60px;
+           font-size: 18px;
+           margin-right: 140px;
+        }
+           .introduction1 img{
+           width: 120px;
+         }  
+         .introduction2 img{
+           width: 120px;
+         }  
+         .introduction3 img{
+           width: 120px;
+         }  
+         .paragraph{
+           padding-top: 6px;
+         }
+       .paragraph .intro{
+           font-size: 18px;
+       }
+       .paragraph .date{
+           font-size: 15px;
+       }
+       }
+    
