@@ -27,6 +27,80 @@
       <!-- preloader -->
      
     
+      <div id="preloader">
+          <div class="preloader">
+              <span></span>
+              <span></span>
+          </div>
+      </div>
+      <!-- preloader end  -->
+     <!-- Header stat -->
+
+     <header id="nav">
+      <div class="logo">
+        <a class="logo-img" href="index.html"><img src="/assets/img/logo/MBAZA-LOGO-WHITE.png"
+         alt="" ></a>
+           </div>
+           <div class="menu">
+            <ul>
+              <li><a href=""> Home</a></li>
+              <li><a href=""> Community</a></li>
+              <li><a href=""> Programs</a></li>
+              <li><a href=""> Events</a></li>
+              <li><a href="">Gallery </a></li>
+            </ul>
+           </div>
+           <div class="blog-button">
+            <button><div class="blog">BLOG </div><div class="arr"><div class="line"></div><div class="arrow"></div></div></button>
+           </div>
+           <div class="burger" id="burger">
+            <div class="bline"></div>
+            <div class="bline"></div>
+            <div class="bline"></div>
+            <div class="bline"></div>
+           </div>
+     </header>
+     <script>
+      const nav = document.getElementsById('nav');
+      const offset = nav.offsetTop;
+      window.addEventListener('scroll', () =>{
+        if(window.pageXOffset >= navOffset){
+          nav.style.position= 'sticky'
+        }
+        else{
+          nav.classListremove('sticky');
+        }
+      })
+     </script>
+     <div class="burger-menu">
+      <div class="cross" id="cross">
+        <div class="cross1 cro"></div>
+        <div class="cross2 cro"></div>
+      </div>
+      <div class=" bmenu">
+        <ul>
+          <li><a href=""> Home</a></li>
+          <li><a href=""> Community</a></li>
+          <li><a href=""> Programs</a></li>
+          <li><a href=""> Events</a></li>
+          <li><a href="">Gallery </a></li>
+        </ul>
+       </div>
+     </div>
+     <script>
+      let cross = document.getElementById('cross')
+      let burger = document.getElementById('burger')
+      let burgerMenu = document.querySelector('.burger-menu')
+
+      burger.addEventListener('click', ()=>{
+        burgerMenu.style.display = 'block';
+      })
+      cross.addEventListener('click', ()=>{
+        burgerMenu.style.display = 'none';
+      })
+
+     </script>
+     
     <div class="prodContainer">
       <div class="upperPart">
         <div class="title">
@@ -191,7 +265,7 @@
       <div class="projects-intro">
         <h3>Projects under debvelopment [3]</h3>
         <p>would you like to join and continue </p>
-        <button>join us</button>
+        <button class="btn active">Join us</button>
       </div>
       <div class="projects-Container">
        
