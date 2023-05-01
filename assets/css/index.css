@@ -334,3 +334,52 @@ hr {
     margin: auto;
 }
 
+.big {
+    background-color: rgb(40, 115, 138);
+    width: 100vw;
+    height: 250px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .big .our-bg {
+    /* border: 2px solid red; */
+    width: 100vw inherit;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 47vw;
+    color: #fff;
+    padding-top: 6vh;
+  }
+  .big p {
+    /* border: 2px solid red; */
+    width: 100vw inherit;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    margin-bottom: -10px;
+  }
+  .big .paragrapgh-bg1 {
+    width: 100vw inherit;
+    padding-left: 40vw;
+  }
+  .big .paragrapgh-bg2 {
+    width: 100vw inherit;
+    padding-left: 38vw;
+  }
+  .big .paragrapgh-bg3 {
+    width: 100vw inherit;
+    padding-left: 35vw;
+  }
+  .big .paragrapgh-bg4 {
+    width: 100vw inherit;
+    padding-left: 35vw;
+  }
+  .big .paragrapgh-bg5 {
+    width: 100vw inherit;
+    padding-left: 45vw;
+  }
+  
+
