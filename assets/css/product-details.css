@@ -4,7 +4,7 @@ body{
   border: 0px;
   color: fff;
     margin: 2px 0px 0px 171px;
-    background: #F5F5F5;
+    background: #FFF;
 }
 .stats{
     /* border: 2px solid green; */
@@ -108,7 +108,7 @@ i{
 .text p {
     padding-bottom: 0px;
     font-family: 'Inter';
-    font-style: normal;
+    font-style: normal; 
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;

@@ -1,0 +1,55 @@
+footer{
+    width: 100%;
+    background-color: #28738A;
+}
+
+
+.icons1 img{
+     width: 32px;
+    height: 32px;
+    padding: 5px 5px;
+  }
+#foater{
+    gap: 5%;
+    display: flex;
+    justify-content: center;
+   
+}
+#foater h3{
+    margin-top: 30px;
+    color:#fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+}
+#foater span{
+    font-size: 15px;
+    display:block;
+    font-family: 'Inter';
+    font-style: normal;
+   
+    line-height: 35px;
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+}
+
+
+.copy{
+    gap: 2%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+}
+.copy p{
+    color: rgb(255, 255, 255);
+    opacity: 0.7;
+    font-size: 15px;
+text-align: inherit;
+}
+.copy p a{
+    font-style: normal;
+    color: rgb(241, 145, 18);
+    font-weight: 900;
+}
