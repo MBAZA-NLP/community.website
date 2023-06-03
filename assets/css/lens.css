@@ -84,3 +84,16 @@
 .slider .slide:hover {
 }
 
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(calc(-250px * 9));
+  }
+}
+
+.slide img {
+  width:100%;
+  height:100%;
+}
