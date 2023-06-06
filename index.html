@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Download_Access</title>
+    <link rel="stylesheet" href="./CSS/index.css" />
+  </head>
+  <body>
+    <h3>
+      Fill the form below and submit to be able to have access to the download
+      link:
+    </h3>
+    <div class="form">
+      <form id="form" action="#">
+        <div class="input-box">
+          <label>Name</label><br />
+          <input type="text" class="input" /><br />
+        </div>
+        <div class="input-box">
+          <label>Surname</label><br />
+          <input type="text" class="input" /><br />
+        </div>
+        <div class="input-box">
+          <label>Email</label><br />
+          <input
+            type="text"
+            id="email"
+            class="input"
+            onkeyup="validate()"
+          /><br />
+          <span id="text"></span>
+        </div>
+        <div class="input-box">
+          <label>Phone</label><br />
+          <input type="text" class="input" /><br />
+        </div>
+        <button><a href="">Submit</a></button>
+      </form>
+    </div>
+    <script>
+      function validate() {
+        var form = document.getElementById("form");
+        var email = document.getElementById("email").value;
+        var text = document.getElementById("text");
+        var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+        if (email.match(pattern)) {
+          form.classList.add("valid");
+          form.classList.remove("invalid");
+          text.innerHTML = "Your Email Address is Valid";
+          text.style.color = "#4caf50";
+        } else {
+          form.classList.remove("valid");
+          form.classList.add("invalid");
+          text.innerHTML = "Please enter a Valid Email Address";
+          text.style.color = "#f44336";
+        }
+        if (email == "") {
+          form.classList.remove("valid");
+          form.classList.remove("invalid");
+          text.innerHTML = "";
+        }
+      }
+    </script>
+  </body>
+</html>
