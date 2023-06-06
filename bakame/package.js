@@ -139,3 +139,25 @@ let styles = `
 
 
   // so far the chatbot is included but the images, links, and other path related features are to be done next
+
+  /*
+
+
+- responsiveness
+- edit the world map to add the african continent
+- add the background section
+- include the images gallery
+- integrate other pages and include external resources
+- add real content
+- deploy
+
+
+
+
+
+
+
+
+
+
+  */
