@@ -15,7 +15,6 @@ body {
   font-family: "poppins", sans-serif;
   display: inline-flex;
   gap: 5%;
-  /* background: grey; */
   padding: 10px;
 }
 .connect-content {
@@ -23,7 +22,7 @@ body {
 }
 
 .connect-icons {
-  width: 45%;
+  min-width: 45%;
   height: 100%;
   background: white;
   position: relative;
@@ -32,23 +31,28 @@ body {
   height: 60%;
   width: 60%;
   background: rgba(0, 217, 255, 0.3);
-  /* margin: auto; */
   transform: translate(30%, 30%);
+  animation: anime alternate 1s;
 }
 .mbaza-hand {
   height: 60%;
   width: 40%;
   border-radius: 50%;
   background: rgb(59, 59, 167);
-  /* margin: auto; */
   transform: translate(70%, 30%);
+  text-align: center;
+  color: orange;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.mbaza-hand h3 {
+  transform: translateY(150%);
 }
 
 .social-icon {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  /* border: 0.3px solid black; */
   position: absolute;
   background: white;
   box-shadow: 1px 1px 10px 1px rgb(83, 82, 82);
@@ -97,9 +101,10 @@ body {
   top: 20%;
   left: 60%;
   /* background: red; */
+  animation: anime alternate 1s reverse;
 }
 .social-icon:hover {
-  /* transform: scaleY(1); */
+  transform: scale(1);
   box-shadow: 1px 1px 15px 1px rgb(47, 47, 47);
 }
 .connect-content {
@@ -112,9 +117,39 @@ body {
 .connect-content p {
   font-size: 1.1em;
   line-height: 150%;
+  margin-bottom: 20px;
 }
 .connect-content a {
   margin: 5px;
+  text-decoration: none;
+  text-align: center;
+  padding: 3px 0px;
+  font-weight: 600;
+}
+.mbaza-hand img {
+  transform: translate(0%, 60%);
+  width: 60px;
+}
+@media screen and (max-width: 800px) {
+  .connect-container {
+    display: block;
+  }
+  .connect-icons {
+    width: 100%;
+  }
+  .connect-content {
+    width: 100%;
+  }
+}
+
+@kefyframe anime {
+  from {
+    transform: scale(0.7);
+  }
+
+  to {
+    transform: scale(0.85);
+  }
 }
 @media screen and (max-width: 800px) {
   .connect-container {
