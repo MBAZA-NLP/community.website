@@ -1,0 +1,283 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+.mainContainer h2{
+    display: block;
+    margin: auto;
+    font-size: 50px;
+    color: rgb(90, 166, 248);
+
+}
+
+.chatbot,.smallDev {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom:  20px;
+    margin-right: 20px;
+  }
+  /* set some basic styles for the div */
+  .chatbot,.smallDev{
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px 1px  #BCBCBC;
+    width: 30%;
+
+  }
+  /* center the text inside the div */
+  .chatbot p {
+    text-align: center;
+  }
+
+
+
+  .formSections{
+    display:flex;
+    justify-content: space-between;
+  }
+  .formSections .leftSection{
+    padding: 15px 30px 5px 25px;
+    min-width: 60%;
+    max-width: 100%;
+  }
+  .formSections .rightSection{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+  .formSections .leftSection .chatbotTitle{
+    font-size: 18px;
+    font-family: arial;
+    font-weight: medium;
+    margin-bottom: 20px;
+  }
+
+
+  .formSections .leftSection input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+     border: 1px gray;
+    border-style: none none  solid none;
+    padding-left:2px;
+    margin-top: 30px;
+    outline: none;
+  }
+  .formSections .rightSection button {
+    background-color: #F59221;
+    color: white;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  .formSections .rightSection button img{
+    padding: 16px 16px;
+    width: 20px;
+  }
+
+  .responsesSection {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    gap: .5rem;
+  }
+
+  .responsesSection .questions {
+    justify-self: flex-end;
+  }
+
+  .responsesSection .answers {
+    justify-self: flex-start;
+    background: #aaaaaa;
+  }
+  .chatbot .bakame .title{
+    display: block;
+    margin: auto;
+    width: 90%;
+    /* border: 1px solid red; */
+  }
+  .chatbot .bakame{
+    display: block;
+    /* border: 1px solid blue; */
+  }
+  .chatbot .bakame .header{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 10px 0px;
+    /* border-bottom: 1px solid #BCBCBC; */
+    
+  }
+  .chatbot .bakame .content{
+    /* border: 1px solid green; */
+    height: 300px;
+    width: inherit;
+    overflow: auto;
+
+  }
+
+.content::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.1);
+  background-color: #F5F5F5;
+  border-radius: 10px;
+}
+
+.content::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.content::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #FFF;
+	background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(#f9a749), to(#F59221),
+    color-stop(.6,#bababa))
+}
+
+  .content .chatTextContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: helvetica;
+  }
+
+  .chatTextContent p {
+    width: 50%;
+    margin-right: 1rem;
+    border-radius: .8rem;
+    padding: .5rem;
+    text-align: right;
+    font-size: .8rem;
+    background-color:  #bababa;
+  }
+  .chatTextResponse {
+    font-family: helvetica;
+  }
+
+  .chatTextResponse p{
+    width: 50%;
+    margin-left: 1rem;
+    border-radius: .8rem;
+    padding: .5rem;
+    text-align: left;
+    font-size: .8rem;
+    background-color:  #f9a749;
+  }
+
+
+  .chatbot .bakame .content .initialText{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .chatbot .bakame .content .initialText label{
+    color: #BCBCBC; 
+  }
+  
+  .bakameRecording {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bakameRecording .bakameCounter{
+    padding: 0px 30px;
+    background: #D9D9D9;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    padding-right: 90px;
+    padding-left: 90px;
+    border-radius: 10px;
+  }
+  .bakameRecording #bakameCancel, .bakameRecording #bakamePause, .bakameRecording #bakameAudio{
+    border-radius: 50%;
+    border: 1px solid black;
+    padding:10px;
+  }
+ .bakameRecording #bakameCancel{
+   padding:10px 15px;
+ }
+ .bakameRecording #bakamePause{
+   padding: 10px 12px;
+ }
+ .bakameRecording #bakameAudio img{
+   width: 20px;
+   height: auto;
+ }
+ .bakameRecording #bakameAudio{
+   padding: 10px 15px;
+ }
+  .bakameRecording #bakameAudio{
+    background: #F59221;
+    border: none;
+  }
+
+  @media screen and (min-width:800px){
+    .smallDev{
+      display:none;
+    }
+  }
+
+  @media screen and (max-width: 900px){
+    .chatbot{
+      display:none;
+      /* height: 32%; */
+    }
+
+    .smallDev{
+      display:block;
+      /* border: 1px solid red; */
+      width: 70px;
+      height: 70px;
+    }
+    #bakameMobile{
+      width: inherit;
+      height: inherit;
+      border: none;
+      background-color: transparent;
+      
+    }
+    #bakameMobile img{
+      width:inherit;
+      height: inherit;
+    }
+  }
+  @media screen and (max-width:700px){
+    .chatbot{
+      /* display: block; */
+      width: 80%;
+      /* height: 32%; */
+    }
+    .smallDev{
+      display:block;
+    }
+  }
+    @media screen and (max-width:800px){
+      .chatbot{
+        /* display: block; */
+        width: 80%;
+        /* height: 32%; */
+      }
+      .smallDev{
+      display:block;
+    }
+  }
+    /* @media screen and (max-width:400px){
+      #bakameAudio{
+        margin-left: 20px;
+      }
+    } */
+      

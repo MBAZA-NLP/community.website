@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link href="./index.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <h2>BAKAME CHATBOT</h2>
+    </div>
+
+    <div class="chatbot">
+        <form>
+            <div id="bakame" class="bakame">
+                <div class="title">
+                    <div class="header"> 
+                        <label> Bakame Chatbot</label>
+                    </div>
+                    <hr style="color:#BCBCBC">
+                </div>
+
+                <div class="content">
+                    <div class="initialText">
+                        <label for="">Wabasha gusaba serivisi <br/>
+                            yo gutwara ibinyabiziga</label>
+                    </div>
+                    <div class="chatTextContent"></div>
+                    <div class="chatTextResponse"></div>
+                </div>
+
+            </div>
+            <div class="formSections" >
+                
+                <div class="leftSection">
+                    <label  id="bakameSaba" class="chatbotTitle" for="input">Saba form ushaka</label>
+
+                    <input  id="bakameType" type="text" placeholder="Andika  hano umbaze..">
+
+                    <div class="bakameRecording" id="bakameRecording">
+                        <div class="bakameCounter">
+                            <label id="timerLabel">0:00</label>
+                        </div>
+                        <!-- <div  id="bakameRecorderControls"> -->
+                            <button id="bakameCancel" ><img src="./images/cancel.svg" alt="Cancel"></button>
+                            <button id="bakamePause" ><img src="./images/pause.svg" alt="Pause"></button>
+                            <button id="bakameAudio"><img src="./images/send.svg" alt="Send"></button>
+                        <!-- </div>  -->
+                    </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                </div>
+
+                <div class="rightSection">
+                    <button id="bakameMic" type="submit"><img src="./images/mic.svg" alt="Mic"></button>
+                    <button id="bakameSend" type="submit"><img src="./images/send.svg" alt="Send"></button>
+                    
+                </div>
+
+                
+                
+            </div>
+           
+        </form>
+
+        <!-- <div class="responsesSection">
+            <div class="questions">
+                Questions
+            </div>
+            <div class="answers">
+                Answer
+            </div>
+        </div> -->
+    </div>
+    <div  class="smallDev">
+        <button id="bakameMobile"><img src="./images/mobile-icon.svg" alt="Mobile icon"></button>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
