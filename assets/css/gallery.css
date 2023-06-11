@@ -18,16 +18,17 @@
   
   .slider {
     background: white;
-    height: 400px;
+    height: 320px;
     margin: auto;
     overflow: hidden;
     position: relative;
     width: 100%;
   }
   
+  
   .slider::before, .slider::after {
     content: "";
-    height: 100%;
+    height: 80%;
     position: absolute;
     width: 100px;
     z-index: 2;
@@ -49,7 +50,7 @@
     height: 100%;
     animation: scroll 80s linear infinite;
     display: flex;
-    gap:3rem;
+    
     width: calc(400px * 11);
     padding: 1rem 0rem;
   }
@@ -63,7 +64,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     border-radius: 2rem;
     overflow: hidden;
   }
@@ -80,20 +81,24 @@
     transform: rotate(0deg);
     transform: scale(1.1);
   }
-  
-  .slider .slide:hover {
+  .slider:hover .slide-track {
+    animation-play-state: paused;
   }
+  
+  
+  
   
   @keyframes scroll {
     0% {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-250px * 9));
+        transform: translateX(calc(-250px * 11));
     }
   }
   
   .slide img {
-    width:100%;
-    height:100%;
+    width:80%;
+    border-radius: 20px;
+    height:80%;
   }
