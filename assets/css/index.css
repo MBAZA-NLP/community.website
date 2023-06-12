@@ -2,11 +2,12 @@ body{
     font-family: Optimistic Text,-apple-system,ui-sans-serif,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
     margin:0;
     padding:0;
+    overflow-x: hidden;
 }
 
 *{
-    margin: 0px;
-    padding: 0px;
+    /* margin: 0px; */
+    /* padding: 0px; */
     box-sizing: border-box;
     font-family: Optimistic Text,-apple-system,ui-sans-serif,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
@@ -252,12 +253,11 @@ hr {
 .intro {
     width: 90%;
     margin: auto;
+    /* border: 1px solid blue; */
 }
 
 .intro-container {
     display: flex;
-    flex-direction: row;
-    width: 100%;
 }
 
 .africa-img {
@@ -269,6 +269,8 @@ hr {
 
 .africa-img img {
     width: 100%;
+    margin-top: 50px;
+    
 }
 
 .left-side {
@@ -333,7 +335,6 @@ hr {
     color: black;
     margin: auto;
 }
-
 .big {
     background-color: rgb(40, 115, 138);
     width: 100vw;
@@ -720,4 +721,35 @@ hr {
         font-style: normal;
         color: rgb(241, 145, 18);
         font-weight: 900;
+    }
+
+    @media screen and (max-width: 320px) {
+      .welcoming-part h2 {
+        font-size: 16px;
+      }
+      .welcoming-part p{
+        font-size: 16px;
+      }
+      .intro{
+        /* border: 1px solid green; */
+        width: 100%;
+      }
+      .africa-img{
+        width: 100%;
+        margin-top: 30px;
+        
+    }
+    .africa-img img{
+      height: 60vh;
+    }
+    .intro-container{
+      display: flex;
+      background-color: #F59221;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      border: 1px solid red;
+    } 
+    
     }
