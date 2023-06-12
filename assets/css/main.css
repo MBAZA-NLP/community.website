@@ -6991,4 +6991,14 @@ ul.timeline li.timeline-list:hover::after {
   color: #ffffff;
 }
 
+
+
+/* responsivness */
+
+
+
+@media (max-width: 767px) {
+
+ 
+}
 /*# sourceMappingURL=main.css.map */

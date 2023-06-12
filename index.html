@@ -7,26 +7,44 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script
+      src="https://kit.fontawesome.com/343231975f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
     <link rel="stylesheet" href="./assets/css/connect.css" />
     <link rel="stylesheet" href="./assets/css/gallery.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/responsive.css" /> -->
   </head>
   <body>
     <!-- header -->
     <section class="headerSection">
-      <nav>
+      <nav class="open">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <span class="glyphicon glyphicon-align-justify"></span
+        ></label>
+
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a class="active" href="#">Home</a></li>
           <li><a href="./pages/users.html">Community</a></li>
           <li><a href="#">Programs</a></li>
+
           <li><a href="#events">Events</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="https://blog.dev.mbaza.org">Blogs</a></li>
         </ul>
       </nav>
-      <div class="toggle">
-        <i class="ion-navicon"></i>
-      </div>
+      <!-- <div class="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div> -->
     </section>
 
     <!-- hero section -->
@@ -159,6 +177,7 @@
             Community News section is your go-to source for all the latest news
             and information in our community.
           </p>
+
           <h3>
             <a
               href="https://blog.dev.mbaza.org/introducing-the-mbaza-nlp-community/"
