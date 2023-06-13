@@ -56,6 +56,7 @@ img{
 .cardie{
     padding: 30px;
     display:flex;
+    gap: 20px;
 }
 .card img{
     width: 150px;
@@ -76,7 +77,6 @@ img{
     justify-content: center;
 }
 .card a{
-/* font-size: .8em; */
 background:red
 }
 .cardiee p{
@@ -86,54 +86,23 @@ font-size: .8em;
 font-size: .9em;
 }
 .card{
-    /* background:red; */
     padding:5px;
     align-items: center;
     justify-items: center;
 }
-@media (min-width: 1200px) and (max-width: 1600px){
-    body{
-        font-size: 18px;
-    }
-    button{
-        font-size: 22px;
-    }
-}
 @media (min-width: 992px) and (max-width: 1200px) { 
-    nav{
-        height: 80px;
-        width: 100%;
-    }  
-    img{
-        width: 100%;
-    }
-    body{
-        font-size: 18x;
-    }
-    button{
-        font-size: 20px;
+    .cardie{
+        display: flexbox;
+        flex-wrap: wrap;
     }
 }
 
  
 /* Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
-    body{
-        font-size: 18px;
-    }
-    nav ul{
-        margin-left: 5px;
-    } 
-    nav{
-        height: 100px;
-        width: 100%;
-    }
-    button{
-        height: 40px;
-        font-size: 20px;
-    }  
-    img{
-        width: 100%;
+    .cardie{
+        display: flexbox;
+        flex-wrap: wrap;
     }
 
 }
@@ -141,41 +110,17 @@ font-size: .9em;
  
 /* small mobile :320px. */
 @media (max-width: 767px) {
-    body{
-        font-size: 18px;
-    }
-    nav ul{
-        margin-left: 5px;
-        display: inline;
-        margin-bottom: 15px;
-    } 
-    nav{
-        display: block;
-        height: 50%;
-        width: 100%;
-    } 
-    button{
-        width: 30%;
-        font-size: 18px;
-    } 
-    img{
-        width: 100%;
-        height: 130px;
+    .cardie{
+        display: flexbox;
+        flex-wrap: wrap;
     }
  
 }
  
 /* Large Mobile :480px. */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-    nav ul{
-        margin-left: 5px;
-    } 
-    nav{
-        display: block;
-        height: 100px;
-        width: 59%;
-    }  
-    img{
-        width: 59%;
+    .cardie{
+        display: flexbox;
+        flex-wrap: wrap;
     }
 }
