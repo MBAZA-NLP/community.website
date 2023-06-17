@@ -507,10 +507,10 @@ hr {
   /* border: 1px solid blue; */
 }
 .insights h2 {
-  height: 50px;
+  /* height: 50px; */
 }
 .insights p {
-  height: 180px;
+  /* height: 180px; */
   text-align: left;
 }
 .insights h3 {
@@ -519,6 +519,76 @@ hr {
 .insights h3:hover {
   color: #28738a;
   cursor: pointer;
+}
+@media (max-width: 500px) {
+  .insights {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .intro {
+    width: 100%;
+  }
+
+  .welcoming-part {
+    margin: 0;
+    padding: 10px;
+  }
+  .lower {
+    display: block;
+  }
+  .lower-left {
+    width: 100%;
+    padding-right: 10px;
+  }
+  .lower-right {
+    width: 100%;
+    padding-right: 10px;
+  }
+  .blog {
+    width: 100%;
+    margin: 0;
+  }
+  .introduction .introduction1 {
+    display: block;
+  }
+  .introduction .introduction1 img {
+    width: 100%;
+  }
+  .insights h2 {
+    padding-bottom: 30px;
+  }
+  .insights p {
+    font-size: 18px;
+    padding: 10px 10px 0 10px;
+  }
+  .insights h3 {
+    padding-top: 0;
+  }
+  .copy {
+    display: block !important;
+
+    display: none;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+  .connect-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .connect-icons {
+    width: 100%;
+  }
+  .connect-content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /* blog RESPONSIVENESS */
@@ -537,7 +607,7 @@ hr {
   }
   .insights {
     width: 100%;
-    padding: 5%;
+    /* padding: 5%; */
   }
   .insights h3 {
     padding-top: 20%;
@@ -549,10 +619,7 @@ hr {
 }
 .connect-container {
   width: 90%;
-  height: 60vh;
   margin: 100px auto;
-  height: 60vh;
-
   display: inline-flex;
   gap: 5%;
   /* background: grey; */

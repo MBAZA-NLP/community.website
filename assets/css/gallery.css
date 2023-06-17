@@ -104,3 +104,10 @@
     margin-top: 350px;
   }
 }
+@media (max-width: 464px) {
+  .lens__on__life__container {
+    padding-top: 5rem;
+
+    margin-top: 40rem;
+  }
+}
