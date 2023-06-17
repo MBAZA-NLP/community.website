@@ -437,6 +437,17 @@ hr {
   width: 100vw inherit;
   padding-left: 45vw;
 }
+@media (min-width: 767px) and (max-width: 900px) {
+  .lower {
+    margin-left: -250px;
+    width: 60rem;
+    /* background-color: red; */
+  }
+  .lens__on__life {
+    margin-top: 280px;
+  }
+}
+
 @media (max-width: 676px) {
   .intro-container {
     display: block;
