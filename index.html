@@ -1,107 +1,137 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Hero Section</title>
-	<!-- include font awesome icons -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./assets/css/index.css">
-  <link rel="stylesheet" href="./assets/css/connect.css" />
-  <link rel="stylesheet" href="./assets/css/gallery.css" />
-</head>
-<body>
+  <head>
+    <title>Hero Section</title>
+    <!-- include font awesome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/343231975f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/connect.css" />
+    <link rel="stylesheet" href="./assets/css/gallery.css" />
+    <!-- <link rel="stylesheet" href="./assets/css/responsive.css" /> -->
+  </head>
+  <body>
     <!-- header -->
     <section class="headerSection">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="./pages/users.html">Community</a></li>
-                <li><a href="#">Programs</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="https://blog.dev.mbaza.org">Blogs</a></li>
-            </ul>
-        </nav>  
-        <div class="toggle">
-            <i class="ion-navicon"></i>
-        </div> 
+      <nav class="open">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <span class="glyphicon glyphicon-align-justify"></span
+        ></label>
+
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a href="./pages/users.html">Community</a></li>
+          <li><a href="#">Programs</a></li>
+
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="https://blog.dev.mbaza.org">Blogs</a></li>
+        </ul>
+      </nav>
+      <!-- <div class="toggle-btn">
+        <i class="fa-solid fa-bars"></i>
+      </div> -->
     </section>
 
     <!-- hero section -->
-	<section class="hero" id="events">
-		<div class="dark-layer"></div>
-		<div class="content-layer">
-            <div class="content-logo">
-                <img src="./assets/img/logo/MBAZA-LOGO-WHITE.png" width="80px" alt="Community logo"/>
+    <!-- <section class="hero" id="events">
+      <div class="dark-layer"></div>
+      <div class="content-layer">
+        <div class="content-logo">
+          <img
+            src="./assets/img/logo/MBAZA-LOGO-WHITE.png"
+            width="80px"
+            alt="Community logo"
+          />
+        </div>
+        <div class="content-left">
+          <div class="content-left-top">
+            <h1>MBAZA-NLP</h1>
+            <span>COMMUNITY</span>
+          </div>
+          <div class="content-left-bottom">
+            <button class="btn-explore">EXPLORE MORE</button>
+            <button class="btn-contact">CONTACT US</button>
+          </div>
+        </div>
+        <div class="content-right">
+          <div class="date-section">
+            <div class="date-icon"><i class="fa fa-calendar"></i></div>
+            <div class="date-text">
+              <div class="date-day">25</div>
+              <div class="date-month">MAY</div>
             </div>
-			<div class="content-left">
-				<div class="content-left-top">
-					<h1>MBAZA-NLP</h1>
-                    <span>COMMUNITY</span>
-				</div>
-				<div class="content-left-bottom">
-					<button class="btn-explore">EXPLORE MORE</button>
-					<button class="btn-contact">CONTACT US</button>
-				</div>
-			</div>
-			<div class="content-right">
-				<div class="date-section">
-					<div class="date-icon"><i class="fa fa-calendar"></i></div>
-					<div class="date-text">
-						<div class="date-day">25</div>
-						<div class="date-month">MAY</div>
-					</div>
-				</div>
-				<hr>
-				<div class="location-section">
-					<div class="location-icon"><i class="fa fa-map-marker"></i></div>
-					<div class="location-text">
-						<div class="location-city">KIGALI</div>
-						<div class="location-building" id="location-building">CCB</div>
-						<div class="location-floor">FLOOR 7</div>
-					</div>
-				</div>
-				<div class="event-section">
-					<h2>Community Gathering</h2>
-				</div>
-			</div>
-		</div>
-	</section>
+          </div>
+          <hr />
+          <div class="location-section">
+            <div class="location-icon"><i class="fa fa-map-marker"></i></div>
+            <div class="location-text">
+              <div class="location-city">KIGALI</div>
+              <div class="location-building" id="location-building">CCB</div>
+              <div class="location-floor">FLOOR 7</div>
+            </div>
+          </div>
+          <div class="event-section">
+            <h2>Community Gathering</h2>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
     <section>
-        <div class="intro">
-            <div class="intro-container">
-                <div class="africa-img">
-                    <img src="../assets/img/logo/our africa.png">
-                    <div class="circle"></div>
-                </div>
-                <div class="left-side">
-                <div class="welcoming-part">
-                    <h2>Welcome to the Mbaza NLP Community!</h2>
-                    <p>We are a community working on Natural Language Processing (NLP)
-                        for Kinyarwanda and other low-resource languages. For example, we are working
-                        on Kinyarwanda automatic speech recognition (ASR, also known as Speech-to-Text, STT),
-                        Text-to-Speech (TTS), and semantic chatbots</p>
-                </div>
-                <div class="lower">
-                    <div class="lower-left">
-                        <h2 class="line">Vision</h2>
-                        <hr>
-                        <p>Sustainable community rooted in partnership,
-                            extending on pre-existing open packages to
-                            create inclusive NLP solutions for Kinyarwanda
-                            and other low-resource languages</p>
-                    </div>
-                    <div class="lower-right">
-                        <h2>Mission</h2>
-                        <hr>
-                        <p>Foster the use of NLP and AI, to implement innovative
-                            use cases in Rwanda and the East Africa region</p>
-                    </div>
-                </div>
+      <div class="intro">
+        <div class="intro-container">
+          <div class="africa-img">
+            <img src="../assets/img/logo/our africa.png" />
+            <div class="circle"></div>
+          </div>
+          <div class="left-side">
+            <div class="welcoming-part">
+              <h2>Welcome to the Mbaza NLP Community!</h2>
+              <p>
+                We are a community working on Natural Language Processing (NLP)
+                for Kinyarwanda and other low-resource languages. For example,
+                we are working on Kinyarwanda automatic speech recognition (ASR,
+                also known as Speech-to-Text, STT), Text-to-Speech (TTS), and
+                semantic chatbots
+              </p>
             </div>
+            <div class="lower">
+              <div class="lower-left">
+                <h2 class="line">Vision</h2>
+                <hr />
+                <p>
+                  Sustainable community rooted in partnership, extending on
+                  pre-existing open packages to create inclusive NLP solutions
+                  for Kinyarwanda and other low-resource languages
+                </p>
+              </div>
+              <div class="lower-right">
+                <h2>Mission</h2>
+                <hr />
+                <p>
+                  Foster the use of NLP and AI, to implement innovative use
+                  cases in Rwanda and the East Africa region
+                </p>
+              </div>
             </div>
-    
+          </div>
         </div>
+      </div>
     </section>
     <!-- <section>
         <div class="big">
@@ -127,20 +157,35 @@
     <section>
       <div class="blog">
         <div class="introduction">
-            <div class="introduction1">
-                <img src="../assets/img/article/speech.PNG" alt="AI">
-                <div class="paragraph">
-                 <p  class="intro">Introducing the Mbaza nlp community</p>
-                 <p class="date">30-april-2023</p>
-                </div>
-             </div>
+          <div class="introduction1">
+            <img src="../assets/img/article/speech.PNG" alt="AI" />
+            <div class="paragraph">
+              <p class="intro">Introducing the Mbaza nlp community</p>
+              <p class="date">30-april-2023</p>
+            </div>
+          </div>
         </div>
         <div class="insights">
-            <h2>insights,ideas & community news</h2>
-            <p>Stay informed and inspired with our Insights, Ideas & Community News section. Get the latest news and updates on community events, initiatives, and projects. Discover expert insights and ideas from thought leaders in the community on topics related to our shared interests. Be inspired by stories of community members making a difference and learn how you can get involved. Our Insights, Ideas & Community News section is your go-to source for all the latest news and information in our community.</p>
-            <h3> <a href="https://blog.dev.mbaza.org/introducing-the-mbaza-nlp-community/">Find more articles</a> </h3>
+          <h2>insights,ideas & community news</h2>
+          <p>
+            Stay informed and inspired with our Insights, Ideas & Community News
+            section. Get the latest news and updates on community events,
+            initiatives, and projects. Discover expert insights and ideas from
+            thought leaders in the community on topics related to our shared
+            interests. Be inspired by stories of community members making a
+            difference and learn how you can get involved. Our Insights, Ideas &
+            Community News section is your go-to source for all the latest news
+            and information in our community.
+          </p>
+
+          <h3>
+            <a
+              href="https://blog.dev.mbaza.org/introducing-the-mbaza-nlp-community/"
+              >Find more articles</a
+            >
+          </h3>
         </div>
-    </div>
+      </div>
     </section>
     <section>
       <div class="connect-container">
@@ -180,7 +225,9 @@
           ></a>
           <a href="https://huggingface.co/mbazaNLP"
             ><div class="social-icon social-icon8">
-              <img src="../assets/img/connect-icons/huggingface-icon.svg" /></div
+              <img
+                src="../assets/img/connect-icons/huggingface-icon.svg"
+              /></div
           ></a>
           <a
             href="https://join.slack.com/t/mbazanlpcommunity/shared_invite/zt-1u932og1w-0nXf4VhkgvBIPGrsTArvtw"
@@ -193,12 +240,12 @@
           <p>
             Explore the world of NLP and connect with our community through our
             communication channels. Stay up-to-date with the latest news,
-            research, and industry insights by following us on social media. For a
-            more in-depth discussion, join our forums to connect with like-minded
-            individuals, ask questions, and share your ideas. You can also reach
-            out to us via email or chat to connect with our experts and get
-            personalized support. Join our community today and unlock the power of
-            NLP!
+            research, and industry insights by following us on social media. For
+            a more in-depth discussion, join our forums to connect with
+            like-minded individuals, ask questions, and share your ideas. You
+            can also reach out to us via email or chat to connect with our
+            experts and get personalized support. Join our community today and
+            unlock the power of NLP!
           </p>
           <a href="#">mbazanlp.community@gmail.com</a>
         </div>
@@ -207,73 +254,93 @@
 
     <section class="lens__on__life" id="gallery">
       <div class="lens__on__life__container">
-          <h2>Our Lens on Life</h2>
-          <div class="slider">
-            <div class="slide-track">
-                <div class="slide">
-                    <img src="../assets/img/project/NPL1-min.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../assets/img/project/NPL1-min.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../assets/img/project/NPL1-min.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../assets/img/project/NPL1-min.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../assets/img/project/NPL1-min.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../assets/img/project/NPL1-min.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../assets/img/project/NPL1-min.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../assets/img/project/NPL1-min.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../assets/img/project/NPL1-min.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="../assets/img/project/NPL1-min.jpg" alt="">
-                </div>
+        <h2>Our Lens on Life</h2>
+        <div class="slider">
+          <div class="slide-track">
+            <div class="slide">
+              <img src="../assets/img/project/NPL1-min.jpg" alt="" />
             </div>
+            <div class="slide">
+              <img src="../assets/img/project/NPL1-min.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="../assets/img/project/NPL1-min.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="../assets/img/project/NPL1-min.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="../assets/img/project/NPL1-min.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="../assets/img/project/NPL1-min.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="../assets/img/project/NPL1-min.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="../assets/img/project/NPL1-min.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="../assets/img/project/NPL1-min.jpg" alt="" />
+            </div>
+            <div class="slide">
+              <img src="../assets/img/project/NPL1-min.jpg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
-  </section>
+    </section>
 
     <footer>
-        <div id="foater">
-            <div class="intouch">
-                <h3>Get in Touch</h3>
-                <span>KG 541 St Career Center 7th Floor</span>
-                <span>mbazanlp.community@gmail.com</span>
-                <span>+250781463975 | +250788623107</span>
-            </div>
-            <div class="socialmedia">
-                <h3>Follow us</h3>
-                <div class="icons1">
-                    <a href="#"><img src="../assets/image/renew 2.png" alt="linkdin" ></a>
-                    <a href="#"><img src="../assets/image/72-729738_youtube-red-circle-circle-youtube-logo-png-clipart 2.png" alt="youtube" ></a>
-                    <a href="#"><img src="../assets/image/hf-logo 2.png" alt="hflog" ></a>
-                    <a href="#"><img src="../assets/image/Slack_icon_2019 2.png" alt="Slack" ></a>
-                </div>
-                <div class="icons1">
-                    <a href="#"><img src="../assets/image/GitHub-Mark 2.png" alt="github" ></a>
-                    <a href="#"><img src="../assets/image/1200px-Flickr 2.png" alt="flickr" ></a>
-                    <a href="#"><img src="../assets/image/social-media-twitter-logo-blue-isolated-free-vector 2.png" alt="twitter" ></a>
-                    <a href="#"><img src="../assets/image/ter 2.png" alt="" ></a>
-                </div>
-            
-            </div>
+      <div id="foater">
+        <div class="intouch">
+          <h3>Get in Touch</h3>
+          <span>KG 541 St Career Center 7th Floor</span>
+          <span>mbazanlp.community@gmail.com</span>
+          <span>+250781463975 | +250788623107</span>
         </div>
-        <div class="copy">
-            <p>❤ Built with passion by <a href="https://blog.dev.mbaza.org/"> MBAZA NLP Community</a></p>
-            <p>© 2023 MBAZA All Rights Reserved</p> 
+        <div class="socialmedia">
+          <h3>Follow us</h3>
+          <div class="icons1">
+            <a href="#"
+              ><img src="../assets/image/renew 2.png" alt="linkdin"
+            /></a>
+            <a href="#"
+              ><img
+                src="../assets/image/72-729738_youtube-red-circle-circle-youtube-logo-png-clipart 2.png"
+                alt="youtube"
+            /></a>
+            <a href="#"
+              ><img src="../assets/image/hf-logo 2.png" alt="hflog"
+            /></a>
+            <a href="#"
+              ><img src="../assets/image/Slack_icon_2019 2.png" alt="Slack"
+            /></a>
+          </div>
+          <div class="icons1">
+            <a href="#"
+              ><img src="../assets/image/GitHub-Mark 2.png" alt="github"
+            /></a>
+            <a href="#"
+              ><img src="../assets/image/1200px-Flickr 2.png" alt="flickr"
+            /></a>
+            <a href="#"
+              ><img
+                src="../assets/image/social-media-twitter-logo-blue-isolated-free-vector 2.png"
+                alt="twitter"
+            /></a>
+            <a href="#"><img src="../assets/image/ter 2.png" alt="" /></a>
+          </div>
         </div>
+      </div>
+      <div class="copy">
+        <p>
+          ❤ Built with passion by
+          <a href="https://blog.dev.mbaza.org/"> MBAZA NLP Community</a>
+        </p>
+        <p>© 2023 MBAZA All Rights Reserved</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
