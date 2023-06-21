@@ -6,21 +6,7 @@ body a{
     text-decoration: none;
     color:black;
 }
-nav{
-    background-color: rgb(12, 47, 6);
-    color: white;
-    height: 60px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    gap: 210px;
-}
-nav ul{
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    margin-left: 30%;
-    padding-top: 20px;
-} */
+
 #ho{
     color: rgb(255, 174, 0);
 }
@@ -47,9 +33,13 @@ img{
     padding: 10px;
 }
 .card{
-    margin-left: 6%;
+    /* margin-left: 6%; */
+    width: 300px;
+    /* border: 1px solid red; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 6%;
+    /* margin-bottom: 6%; */
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -58,9 +48,23 @@ img{
     display:flex;
     gap: 20px;
 }
+.card a{
+    color: #28738A;
+}
+.card a p{
+    color: black;
+}
+.card .imgcard{
+    width:200px;
+    height:200px;
+    border:1px solid #28738A;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
 .card img{
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
     border-radius: 50%;
     border:1px solid black;
 }
@@ -70,14 +74,13 @@ img{
 .card p{
     text-align: center;
 }
-.cardiee{
-    display: block;
+.cardie{
+    width: 95%;
+    display: flex;
     flex-wrap: wrap;
-    gap: 1%;
+    /* gap: 1%; */
     justify-content: center;
-}
-.card a{
-background:red
+
 }
 .cardiee p{
 font-size: .8em;
