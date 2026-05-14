@@ -1,163 +1,127 @@
-<a name="readme-top"></a>
+# community.website
 
+> The official MBAZA-NLP community website, deployed at [aimbaza.org](https://aimbaza.org).
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Issues][issues-shield]][issues-url]
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-MBAZA--NLP-yellow)](https://huggingface.co/MBAZA-NLP)
+[![Community](https://img.shields.io/badge/Slack-aimbaza.slack.com-4A154B?logo=slack)](https://join.slack.com/t/aimbaza/shared_invite/zt-3xrd8y8km-zZK83JcPxcG8uxOMZCptpg)
+[![Contributors](https://img.shields.io/github/contributors/MBAZA-NLP/community.website)](https://github.com/MBAZA-NLP/community.website/graphs/contributors)
+[![Issues](https://img.shields.io/github/issues/MBAZA-NLP/community.website)](https://github.com/MBAZA-NLP/community.website/issues)
 
+---
 
+## Table of Contents
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/MBAZA-NLP/community.website">
-    <img src="assets/img/logo/MBAZA-LOGO-WHITE.png" alt="Logo" width="80" height="80">
-  </a>
+- [About](#about)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Community](#community)
+- [License](#license)
+- [Citation](#citation)
+- [Acknowledgements](#acknowledgements)
 
-  <h3 align="center">MBAZA NLP Community website</h3>
+---
 
-  <p align="center">
-    A guide on how to  contribute to the community website!
-    <br />
-    <a href="https://www.mbaza.org">View Website</a>
-    ·
-    <a href="https://github.com/MBAZA-NLP/community.website/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/MBAZA-NLP/community.website/issues">Request Feature</a>
-  </p>
-</div>
+## About
 
+community.website is the static website for the **MBAZA-NLP community**, built with Jekyll and SCSS and deployed at [aimbaza.org](https://aimbaza.org). It serves as the central hub for the community — showcasing projects, events, blog posts, and resources related to open-source NLP for African languages. It is maintained by the [MBAZA-NLP community](https://aimbaza.org) as an open-source Digital Public Good.
 
+**Key features:**
+- Community-driven static site built with Jekyll
+- SCSS-based styling for easy theme customisation
+- Links to all MBAZA-NLP projects, datasets, and models
+- Integrated community blog at [aimbaza.org/blog](https://aimbaza.org/blog)
 
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ol>
+---
 
-<!-- ABOUT THE PROJECT -->
-## About the Project
-
-The website aims to showcase our work as community including the upcomming events, ongoing projects, members of the community and means to communication we use.
-
-Main Objectives:
-* Gallery of Past events
-* Community members profiles
-* Past & Upcoming events such as meetups hackathons
-* Ongoing Projects
-* Contact Page
-* Blog
-
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-We welcome any contribution to the website and community as a whole. Bellow is an introduction on how to get started.
-
-Contribution areas:
-* Content Creator: We look forward to onboarding a content creator for our blog.
-* Content Moderator: We look forward to onboarding a content creator for our blog.
-
-Please feel free to also suggest any other area you might be intrested to contribute
-
-
-### Built With
-
-The community website is built with the following stack. You are also welcome to suggest other stack to include!
-
-[![HTML][html.com]][html-url]
-[![Javascript][javascript.com]][javascript-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Installation
 
 ### Prerequisites
 
-To be honest, there are no pre-requisite apart from joining our <a href="https://join.slack.com/t/mbazanlpcommunity/shared_invite/zt-1e5mxv2x2-XH25edKoZ4tFZou4SvLsQA">slack channel</a>
+- Ruby >= 2.7
+- Bundler (`gem install bundler`)
+- Jekyll (`gem install jekyll`)
 
+### Local Development
 
-<!-- ROADMAP -->
-## Roadmap
+```bash
+git clone https://github.com/MBAZA-NLP/community.website.git
+cd community.website
+bundle install
+bundle exec jekyll serve
+```
 
-- [ ] Add calendar to the community website
-- [ ] Add Ghost CMS
+Open [http://localhost:4000](http://localhost:4000) in your browser to preview the site.
 
+---
 
-See the [open issues](https://github.com/MBAZA-NLP/community.website/issues) for a full list of proposed features (and known issues).
+## Usage
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Building the Site
 
+```bash
+bundle exec jekyll build
+```
 
+The compiled static files are written to the `_site/` directory.
 
-<!-- CONTRIBUTING -->
+### Live Reload during Development
+
+```bash
+bundle exec jekyll serve --livereload
+```
+
+Any saved change to source files will automatically rebuild and refresh the browser preview.
+
+---
+
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+We welcome contributions of all kinds — fixing typos, adding community members, updating project pages, and improving the design.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+1. Read the [Contributor Guide](https://aimbaza.org/contributing) before opening a PR.
+2. Check [open issues](https://github.com/MBAZA-NLP/community.website/issues) for tasks tagged `good first issue`.
+3. Fork the repo, create a feature branch, and submit a pull request against `main`.
+4. For bug reports or visual issues, please [open an issue](https://github.com/MBAZA-NLP/community.website/issues/new) with a screenshot and browser details.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b AmazinFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin dev`)
-5. Open a Pull Request to the dev branch
+All contributors are expected to follow our [Code of Conduct](https://github.com/MBAZA-NLP/.github/blob/main/CODE_OF_CONDUCT.md).
 
-### Thank you to our contributors
+---
 
-<a href="https://github.com/mbaza-nlp/community.website/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=mbaza-nlp/community.website" />
-</a>
+## Community
 
+| Channel | Link |
+|---------|------|
+| Website | [aimbaza.org](https://aimbaza.org) |
+| Slack | [aimbaza.slack.com](https://join.slack.com/t/aimbaza/shared_invite/zt-3xrd8y8km-zZK83JcPxcG8uxOMZCptpg) |
+| HuggingFace | [huggingface.co/MBAZA-NLP](https://huggingface.co/MBAZA-NLP) |
+| GitHub | [github.com/MBAZA-NLP](https://github.com/MBAZA-NLP) |
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+---
 
+## License
 
+This project is licensed under the **Apache 2.0 License** — see [LICENSE](LICENSE) for details.
 
-<!-- CONTACT -->
-## Contact
+---
 
-* [Isaac Manzi](https://github.com/IMdtman)
-* [Samuel Rutunda](https://github.com/rutsam)
-* [Olivier Iradukunda](https://github.com/twist250) 
-* [Floris Nzabakira](https://github.com/Kira-Floris)
-* [Rene Promesse](https://github.com/renepromesse) 
-* [Arnaud Kayonga](https://github.com/agent87)
+## Citation
 
+If you use this work in research, please cite:
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```bibtex
+@misc{mbazanlp-community-website-2024,
+  title     = {MBAZA-NLP Community Website},
+  author    = {MBAZA-NLP Community},
+  year      = {2024},
+  url       = {https://github.com/MBAZA-NLP/community.website},
+  license   = {Apache-2.0}
+}
+```
 
+---
 
+## Acknowledgements
 
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/MBAZA-NLP/community.website
-[contributors-url]: https://github.com/MBAZA-NLP/community.website/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/MBAZA-NLP/community.website
-[forks-url]: MBAZA-NLP/community.website
-[stars-shield]: https://img.shields.io/github/stars/MBAZA-NLP/community.website
-[stars-url]: MBAZA-NLP/community.website
-[issues-shield]: https://img.shields.io/github/issues/MBAZA-NLP/community.website
-[issues-url]: https://github.com/MBAZA-NLP/community.website/issues
-[slack-shield]: https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white
-[slack-url]: https://join.slack.com/t/mbazanlpcommunity/shared_invite/zt-1e5mxv2x2-XH25edKoZ4tFZou4SvLsQA
-[html.com]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
-[html-url]: https://html.com
-[javascript.com]: https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E
-[javascript-url]: https://javascript.com 
+This work is supported by the **MBAZA-NLP community** and funded in part by [GIZ Rwanda — Digital Transformation Center](https://www.giz.de/en/worldwide/66163.html) as part of the Open-Source Language AI initiative.
